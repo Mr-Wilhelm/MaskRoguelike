@@ -181,7 +181,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 1
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -453,6 +453,30 @@ PrefabInstance:
     - target: {fileID: 2030676005253394571, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273672687346599435, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273672687346599435, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273672687346599435, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7417761469298687181, guid: 04f947923dd577c4e9c4aa227854ffe0, type: 3}
+    - target: {fileID: 2273672687346599435, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273672687346599435, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273672687346599435, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6669337070292709069, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
       propertyPath: navMeshTarget.x
