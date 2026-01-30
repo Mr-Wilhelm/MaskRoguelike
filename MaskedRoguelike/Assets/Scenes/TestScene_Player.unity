@@ -954,6 +954,7 @@ GameObject:
   - component: {fileID: 1904403312}
   - component: {fileID: 1904403314}
   - component: {fileID: 1904403315}
+  - component: {fileID: 1904403316}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1090,6 +1091,20 @@ MonoBehaviour:
   moveUpgrades: 0
   healthUpgrades: 0
   damageUpgrades: 0
+--- !u!114 &1904403316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904403309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe2cb7c2863b544db17492796c11403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  primaryAttackRef: {fileID: 0}
+  secondaryAttackRef: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
