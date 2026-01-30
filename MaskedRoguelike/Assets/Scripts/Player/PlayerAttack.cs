@@ -35,11 +35,11 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnPrimaryAttack(InputAction.CallbackContext context)
     {
-
+        Debug.Log("Primary Attack");
     }
 
     private void OnSecondaryAttack(InputAction.CallbackContext context)
     {
-
+        Debug.Log("Secondary Attack");
     }
 }
