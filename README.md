@@ -1,2 +1,2 @@
-# MobileDartsGame
-A Mobile darts game created as part of an interview process
+# MaskRoguelike GGJ2026
+A simple roguelike game made for fun for global game jam 2026
