@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,6 +11,13 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField]
     private InputActionReference secondaryAttackRef;
+
+    private enum AttackType
+    {
+        Default,
+        primary,
+        secondary
+    }
 
     void OnEnable()
     {
@@ -35,11 +43,30 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnPrimaryAttack(InputAction.CallbackContext context)
     {
-        Debug.Log("Primary Attack");
+        Attack(AttackType.primary);
     }
 
     private void OnSecondaryAttack(InputAction.CallbackContext context)
     {
-        Debug.Log("Secondary Attack");
+        Attack(AttackType.secondary);
+    }
+
+    private void Attack(AttackType attackType)
+    {
+        if(attackType != AttackType.primary && attackType!= AttackType.secondary)   //sanity check against what enum is input
+        {
+            Debug.LogWarning("Invalid Attack Type Given");
+            return;
+        }
+
+        switch (attackType)
+        {
+            case AttackType.primary:
+                Debug.Log("Primary Attack");
+                break;
+            case AttackType.secondary:
+                Debug.Log("Secondary Attack");
+                break;
+        }
     }
 }

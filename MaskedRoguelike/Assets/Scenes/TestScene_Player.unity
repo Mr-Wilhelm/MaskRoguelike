@@ -696,7 +696,7 @@ Camera:
   near clip plane: 0.1
   far clip plane: 5000
   field of view: 83.5
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: 0
   m_CullingMask:
@@ -1105,6 +1105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
   primaryAttackRef: {fileID: 1120369429361536294, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   secondaryAttackRef: {fileID: 3979507609062792117, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  chosenAttack: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
