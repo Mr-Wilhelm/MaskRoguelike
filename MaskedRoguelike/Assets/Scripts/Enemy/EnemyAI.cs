@@ -38,7 +38,7 @@ public class EnemyAI : MonoBehaviour
     public Vector3 navMeshTarget = new Vector3(10, 10, 0);
     private NavMeshPath path;
 
-    public PlayerAttack playerAttackScript;
+    private PlayerAttack playerAttackScript;
     public enum DamageType
     {
         Default,
@@ -54,6 +54,8 @@ public class EnemyAI : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
+
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -62,6 +64,7 @@ public class EnemyAI : MonoBehaviour
 
         // Targets the player
         player = GameObject.FindGameObjectWithTag("Player");
+        playerAttackScript = player.GetComponent<PlayerAttack>();
         navMeshTarget = player.transform.position;
 
         // Sets the spritesheet to be the correct one according to the level of the enemy
