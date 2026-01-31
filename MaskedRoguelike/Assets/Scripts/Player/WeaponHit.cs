@@ -39,13 +39,13 @@ public class WeaponHit : MonoBehaviour
                 Debug.Log("Enemy Hit");
 
                 enemy.TakeDamage(
-                    (float)playerAttackScript.GetWeaponDamage(),
+                    playerAttackScript.GetWeaponDamage(),
                     playerAttackScript.transform.position,
-                    (float)playerAttackScript.GetWeaponKnockback());
+                    playerAttackScript.GetWeaponKnockback());
             }
             else
             {
-                Debug.LogError("Enemy tagged object mising EnemyAI component: " + collision.gameObject.name);
+                Debug.LogWarning("Enemy tagged object mising EnemyAI component: " + collision.gameObject.name);
             }
 
 
