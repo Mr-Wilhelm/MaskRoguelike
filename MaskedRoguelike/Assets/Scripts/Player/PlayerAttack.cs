@@ -24,6 +24,10 @@ public class PlayerAttack : MonoBehaviour
     private GameObject weaponHitArea;
 
     [Header("Weapon Attack Variables")]
+
+    [SerializeField]
+    private WeaponHit weapon;
+
     [SerializeField]
     private bool canAttack = true;
 
@@ -32,6 +36,12 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField]
     private float weaponAttackCooldown = 0.25f;
+
+    [SerializeField]
+    private float weaponDamage = 10.0f;
+
+    [SerializeField]
+    private float weaponKnockbackStrength = 1.0f;
 
     void OnEnable()
     {
@@ -75,6 +85,8 @@ public class PlayerAttack : MonoBehaviour
 
         if (!canAttack) { return; }
 
+        weaponHitArea.GetComponent<PolygonCollider2D>().enabled = true;
+
         switch (attackType)
         {
             case AttackType.primary:
@@ -92,7 +104,20 @@ public class PlayerAttack : MonoBehaviour
     {
         canAttack = false;
         yield return new WaitForSeconds(weaponAttackDuration);
+        weaponHitArea.GetComponent<PolygonCollider2D>().enabled = false;
+        weapon.ResetHithash();  //reset the hash of enemies hit
         yield return new WaitForSeconds(weaponAttackCooldown);
         canAttack = true;
     }
+
+    public float GetWeaponDamage()
+    {
+        return weaponDamage;
+    }
+
+    public float GetWeaponKnockback()
+    {
+        return weaponKnockbackStrength;
+    }
+
 }

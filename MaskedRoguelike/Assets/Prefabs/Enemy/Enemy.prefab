@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3515150192969606845}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,6 +74,8 @@ MonoBehaviour:
   moveSpeed: 10
   enemyLevel: 1
   hitStunTime: 0.8
+  lowerBoundMaskDrop: 1
+  upperBoundMaskDrop: 3
   navMeshTarget: {x: -8, y: 8, z: 0}
 --- !u!50 &3515150192969606845
 Rigidbody2D:
