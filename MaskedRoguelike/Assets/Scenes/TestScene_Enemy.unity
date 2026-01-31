@@ -415,7 +415,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.14, y: 0.17}
+    oldSize: {x: 1.45, y: 2.25}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -434,6 +434,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffe2cb7c2863b544db17492796c11403, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+--- !u!95 &884703560
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884703548}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c5559fe4be1f05d4e8d3bbe37a01eb96, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &992645642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2030676005253394571, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
@@ -731,6 +753,18 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.44
       objectReference: {fileID: 0}
@@ -825,6 +859,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3632567355477829867, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 884703554}
+    - targetCorrespondingSourceObject: {fileID: 3632567355477829867, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 884703560}
   m_SourcePrefab: {fileID: 100100000, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

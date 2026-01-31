@@ -155,6 +155,7 @@ public class EnemyAI : MonoBehaviour
             
         }
 
+        //status condition checks for when the player attacks
         if (isBurning)
         {
             if(burnEffectTime > playerAttackScript.GetBurnDuration()) { return; }
