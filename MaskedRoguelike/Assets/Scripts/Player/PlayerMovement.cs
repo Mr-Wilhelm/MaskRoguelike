@@ -15,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private InputActionReference dodgeRef;
 
+    [Header("Animation")]
+    [SerializeField]
+    private Animator animator;
+
     [Header("Movement Values")]
     [SerializeField]
     private float moveSpeed = 10.0f;
@@ -71,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -111,10 +116,17 @@ public class PlayerMovement : MonoBehaviour
     private void OnMove(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+
+        animator.SetBool("isWalking", true);
+        animator.SetFloat("InputX", moveInput.x);
+        animator.SetFloat("InputY", moveInput.y);
     }
 
     private void OnMoveCancel(InputAction.CallbackContext context)
     {
+        animator.SetBool("isWalking", false);
+        animator.SetFloat("LastInputX", moveInput.x);
+        animator.SetFloat("LastInputY", moveInput.y);
         moveInput = Vector2.zero;
     }
 

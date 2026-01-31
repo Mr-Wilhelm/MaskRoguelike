@@ -766,11 +766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.44
+      value: -7.45
       objectReference: {fileID: 0}
     - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -820,6 +820,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7996851433348715462, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 243446282360000019, guid: 56cbd790a6d58ed499dbf41df98f5136, type: 3}
     - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
       propertyPath: burnDuration
       value: 10
