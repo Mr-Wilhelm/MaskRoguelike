@@ -1,9 +1,11 @@
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyAI : MonoBehaviour
 {
+    private SpriteRenderer spriteRenderer;
 
     [Header("Enemy Stats")]
     public float health = 5;
@@ -19,9 +21,10 @@ public class EnemyAI : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (enemyLevel == 2)
         {
-            // GetComponentInChildren<SpriteRenderer>().sprite = SET TO RED SLIME SPRITE
+            // spriteRenderer.sprite = SET TO RED SLIME SPRITE
         }
         health = health * enemyLevel;
         damage = damage * enemyLevel;
@@ -35,6 +38,6 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        spriteRenderer.transform.eulerAngles = Vector3.zero;
     }
 }

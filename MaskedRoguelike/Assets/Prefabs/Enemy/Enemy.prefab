@@ -72,7 +72,7 @@ MonoBehaviour:
   damage: 1
   moveSpeed: 10
   enemyLevel: 1
-  navMeshTarget: {x: 10, y: 10, z: 0}
+  navMeshTarget: {x: 8, y: 8, z: 0}
 --- !u!1 &4630993454789382086
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,12 +154,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.30535775, g: 0.8867924, b: 0.55349356, a: 1}
+  m_Sprite: {fileID: 7417761469298687181, guid: 04f947923dd577c4e9c4aa227854ffe0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.14, y: 0.73}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
