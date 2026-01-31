@@ -18,7 +18,8 @@ public class PlayerHealth : MonoBehaviour
 
     private void Update()
     {
-        playerMaxHealth = GetPlayerMaxHealth();
+        //commented out because bugged
+        //playerMaxHealth = GetPlayerMaxHealth();
     }
 
     public void TakeDamage(float amount, Vector3 damageSourcePos, float knockbackModifier)
