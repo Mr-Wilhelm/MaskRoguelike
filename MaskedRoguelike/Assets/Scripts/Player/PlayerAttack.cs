@@ -19,6 +19,20 @@ public class PlayerAttack : MonoBehaviour
         secondary
     }
 
+    [Header("Hit Radius Variables")]
+    [SerializeField]
+    private GameObject weaponHitArea;
+
+    [Header("Weapon Attack Variables")]
+    [SerializeField]
+    private bool canAttack = true;
+
+    [SerializeField]
+    private float weaponAttackDuration = 0.25f;
+
+    [SerializeField]
+    private float weaponAttackCooldown = 0.25f;
+
     void OnEnable()
     {
         //primary attack
@@ -59,6 +73,10 @@ public class PlayerAttack : MonoBehaviour
             return;
         }
 
+        if (!canAttack) { return; }
+        
+        weaponHitArea.GetComponent<PolygonCollider2D>().enabled = true;
+
         switch (attackType)
         {
             case AttackType.primary:
@@ -68,5 +86,16 @@ public class PlayerAttack : MonoBehaviour
                 Debug.Log("Secondary Attack");
                 break;
         }
+
+        StartCoroutine(AttackCooldown());
+    }
+
+    private IEnumerator AttackCooldown()
+    {
+        canAttack = false;
+        yield return new WaitForSeconds(weaponAttackDuration);
+        weaponHitArea.GetComponent<PolygonCollider2D>().enabled = false;
+        yield return new WaitForSeconds(weaponAttackCooldown);
+        canAttack = true;
     }
 }
