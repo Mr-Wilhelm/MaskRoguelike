@@ -22,6 +22,8 @@ public class EnemyAI : MonoBehaviour
     public float moveSpeed = 10;
     public int enemyLevel = 1; // Level 1 = Blue, Level 2 = Red
     public float hitStunTime = 0.8f;
+    public int lowerBoundMaskDrop = 1;
+    public int upperBoundMaskDrop = 3;
 
     [Header("NavMesh Variables")]
     private NavMeshAgent agent;
@@ -46,6 +48,9 @@ public class EnemyAI : MonoBehaviour
         }
         health = health * enemyLevel;
         damage = damage * enemyLevel;
+        lowerBoundMaskDrop = lowerBoundMaskDrop * enemyLevel;
+        upperBoundMaskDrop = upperBoundMaskDrop * enemyLevel;
+
         agent = GetComponent<NavMeshAgent>();
         path = new NavMeshPath();
         agent.CalculatePath(navMeshTarget, path);
@@ -57,14 +62,9 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        
-        
-
         spriteRenderer.transform.eulerAngles = Vector3.zero;
         
         AnimatorClipInfo[ ] animationClip = animator.GetCurrentAnimatorClipInfo(0);
-        //Debug.Log(animator.GetCurrentAnimatorStateInfo(0).normalizedTime);
         int currentFrame = (int) (animator.GetCurrentAnimatorStateInfo(0).normalizedTime * (animationClip [0].clip.length * animationClip[0].clip.frameRate));
         if (currentFrame%10 > 4)
         {
@@ -103,6 +103,9 @@ public class EnemyAI : MonoBehaviour
             {
                 if (health <= 0)
                 {
+                    int MASK_DROP_VAL = UnityEngine.Random.Range(lowerBoundMaskDrop, upperBoundMaskDrop);
+                    // CALL FUNCTION ON PLAYER SCRIPT TO ADD MASK_DROP_VAL NUMBER OF MASKS TO MASK_COUNTER
+
                     Destroy(gameObject);
                     return;
                 }
@@ -125,7 +128,8 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float amount, Vector3 knockbackSource, float knockbackStrength)
+    // Example Usage: TakeDamage(1, player.transform.position);
+    public void TakeDamage(float amount, Vector3 knockbackSource, float knockbackModifier = 1f)
     {
         
         agent.isStopped = true;
@@ -136,7 +140,7 @@ public class EnemyAI : MonoBehaviour
 
         timeStamp = Time.time + hitStunTime;
 
-        Vector3 force = (transform.position - knockbackSource).normalized * knockbackStrength;
+        Vector3 force = (transform.position - knockbackSource).normalized * (knockbackModifier * 1000);
         if (!stunned){GetComponent<Rigidbody2D>().AddForce(new Vector2(force.x, force.y));}
         
         stunned = true;
@@ -153,8 +157,7 @@ public class EnemyAI : MonoBehaviour
     {  
         if (canAttack)
         {
-            TakeDamage(1, player.transform.position, 1000);
-            Debug.Log("test");
+            
             // REPLACE WITH SOME FUNCTION CALL TO THE PLAYER THAT HANDLES DAMAGE, SHOULD INCLUDE DAMAGE AMOUNT AND POSITION OF DAMAGE SOURCE FOR KNOCKBACK CALCULATIONS
             // player.GetComponent<DamageHandlerScript>().TakeDamage(damage, transform.position)
 
