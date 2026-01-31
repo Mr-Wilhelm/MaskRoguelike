@@ -77,10 +77,10 @@ public class EnemyAI : MonoBehaviour
             if (!stunned)
             {
                 if (agent.isStopped == true)
-            {
-                agent.isStopped = false;
-                canAttack = true;
-            }
+                {
+                    agent.isStopped = false;
+                    canAttack = true;
+                }
             }
             
         }
@@ -126,7 +126,9 @@ public class EnemyAI : MonoBehaviour
                     spriteRenderer.flipX = false;
                 }
                 agent.CalculatePath(navMeshTarget, path);
+                Debug.Log("Recalculating Path");
                 agent.SetPath(path);
+                Debug.Log("Setting Path");
                 agent.isStopped = true;
             }
             
