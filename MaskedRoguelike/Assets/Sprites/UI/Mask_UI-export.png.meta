@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: d2762c3d47267ed4fab94135df404643
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 74062939644037295
+    second: Mask_UI-export_0
+  - first:
+      213: -3639236929053805348
+    second: Mask_UI-export_1
+  - first:
+      213: 5978699056174889108
+    second: Mask_UI-export_2
+  - first:
+      213: -313323424356303064
+    second: Mask_UI-export_3
+  - first:
+      213: -5201492911365387278
+    second: Mask_UI-export_4
+  - first:
+      213: 267637125137285081
+    second: Mask_UI-export_5
+  - first:
+      213: 5614342040685037030
+    second: Mask_UI-export_6
+  - first:
+      213: 7301585136500557727
+    second: Mask_UI-export_7
+  - first:
+      213: 2240542899439101526
+    second: Mask_UI-export_8
+  - first:
+      213: -8537118757636619196
+    second: Mask_UI-export_9
+  - first:
+      213: -8426645726017455550
+    second: Mask_UI-export_10
+  - first:
+      213: 5598134262018947836
+    second: Mask_UI-export_11
+  - first:
+      213: 9034221816516762246
+    second: Mask_UI-export_12
+  - first:
+      213: 3636781694771186602
+    second: Mask_UI-export_13
+  - first:
+      213: -4425343326582080057
+    second: Mask_UI-export_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mask_UI-export_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 735
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa80188e9df170100800000000000000
+      internalID: 74062939644037295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_1
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 727
+        width: 394
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4b3466b45de7dc0800000000000000
+      internalID: -3639236929053805348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_2
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 735
+        width: 378
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49874467d1b98f250800000000000000
+      internalID: 5978699056174889108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_3
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 607
+        width: 154
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ffe6f610ad6abf0800000000000000
+      internalID: -313323424356303064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 575
+        width: 138
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fb8a5c71c590d7b0800000000000000
+      internalID: -5201492911365387278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_5
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 575
+        width: 394
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfb38c1c86d6b300800000000000000
+      internalID: 267637125137285081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_6
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 583
+        width: 378
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5c29607562aed40800000000000000
+      internalID: 5614342040685037030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_7
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 487
+        width: 106
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9743660ff0745560800000000000000
+      internalID: 7301585136500557727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_8
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 487
+        width: 106
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656671965e1081f10800000000000000
+      internalID: 2240542899439101526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_9
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 423
+        width: 394
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444ceb5b8bf068980800000000000000
+      internalID: -8537118757636619196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_10
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 431
+        width: 378
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a7aa4cb5a8e0b80800000000000000
+      internalID: -8426645726017455550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_11
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 271
+        width: 394
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfa359c737190bd40800000000000000
+      internalID: 5598134262018947836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_12
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 279
+        width: 378
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ad09370e0006d70800000000000000
+      internalID: 9034221816516762246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_13
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 119
+        width: 394
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabca72dea1787230800000000000000
+      internalID: 3636781694771186602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mask_UI-export_14
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 127
+        width: 378
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cdfde1e0b50692c0800000000000000
+      internalID: -4425343326582080057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Mask_UI-export_0: 74062939644037295
+      Mask_UI-export_1: -3639236929053805348
+      Mask_UI-export_10: -8426645726017455550
+      Mask_UI-export_11: 5598134262018947836
+      Mask_UI-export_12: 9034221816516762246
+      Mask_UI-export_13: 3636781694771186602
+      Mask_UI-export_14: -4425343326582080057
+      Mask_UI-export_2: 5978699056174889108
+      Mask_UI-export_3: -313323424356303064
+      Mask_UI-export_4: -5201492911365387278
+      Mask_UI-export_5: 267637125137285081
+      Mask_UI-export_6: 5614342040685037030
+      Mask_UI-export_7: 7301585136500557727
+      Mask_UI-export_8: 2240542899439101526
+      Mask_UI-export_9: -8537118757636619196
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
