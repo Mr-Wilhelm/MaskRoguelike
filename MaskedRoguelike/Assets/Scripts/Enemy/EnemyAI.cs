@@ -39,13 +39,18 @@ public class EnemyAI : MonoBehaviour
 
         rb2d = GetComponent<Rigidbody2D>();
 
+        // Targets the player
         player = GameObject.FindGameObjectWithTag("Player");
         navMeshTarget = player.transform.position;
 
+        // Sets the spritesheet to be the correct one according to the level of the enemy
         if (enemyLevel == 2)
         {
             // spriteRenderer.sprite = SET TO RED SLIME SPRITE
+            // PROBABLY ALSO NEED TO SWAP OUT THE ANIMATION FOR THE RED ANIMATION SHEET
         }
+
+        // Increases stats if the enemy is a higher level
         health = health * enemyLevel;
         damage = damage * enemyLevel;
         lowerBoundMaskDrop = lowerBoundMaskDrop * enemyLevel;
@@ -131,20 +136,23 @@ public class EnemyAI : MonoBehaviour
     // Example Usage: TakeDamage(1, player.transform.position);
     public void TakeDamage(float amount, Vector3 knockbackSource, float knockbackModifier = 1f)
     {
-        
+        // Turning off the NavMeshAgent so that it doesnt overwrite the position or teleport the enemy immediately back to the player when the stun is over
         agent.isStopped = true;
         agent.ResetPath();
         agent.updatePosition = false;
         agent.updateRotation = false;
         
-
+        // Sets the stun cooldown
         timeStamp = Time.time + hitStunTime;
 
+        // Knockback calculation and implementation
         Vector3 force = (transform.position - knockbackSource).normalized * (knockbackModifier * 1000);
         if (!stunned){GetComponent<Rigidbody2D>().AddForce(new Vector2(force.x, force.y));}
         
+        // I wonder what this does
         stunned = true;
 
+        // Deals with damage and death checks
         health -= amount;
         if (health <= 0)
         {
