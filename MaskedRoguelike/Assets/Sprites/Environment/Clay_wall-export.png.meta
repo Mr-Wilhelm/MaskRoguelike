@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d46a6e4648443234eade642faae72abd
+guid: c7f371ddcd25ac44f94b4bfb3d10ea80
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6363571537917285267
-    second: Tatami and wood floor-export_0
+      213: 1265598383866899023
+    second: Clay_wall-export_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,11 +113,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tatami and wood floor-export_0
+      name: Clay_wall-export_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
+        y: 128
         width: 128
         height: 128
       alignment: 0
@@ -128,124 +128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 393985c1992ff4850800000000000000
-      internalID: 6363571537917285267
+      spriteID: f4ae1b2560f409110800000000000000
+      internalID: 1265598383866899023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tatami and wood floor-export_1
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 384
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ea442f89a98bcf43af7028f16f3a9ac
-      internalID: 1251111827
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tatami and wood floor-export_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab164ba66f6339b4f907ac6590bcef22
-      internalID: -847476058
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tatami and wood floor-export_3
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c14b4ce264bec834fba698073fc8c579
-      internalID: 356575882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tatami and wood floor-export_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9767f8d64e12129468064d38b3585a2b
-      internalID: 657868148
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tatami and wood floor-export_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a942e5b937104724fa8164645fb24bfa
-      internalID: 468791535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tatami and wood floor-export_6
+      name: Clay_wall-export_1
       rect:
         serializedVersion: 2
         x: 128
@@ -260,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 267e6a0374abef549a26a9d5e7e805cb
-      internalID: 311352718
+      spriteID: 7e0327647abf50642beefdf8824b209a
+      internalID: -1674223122
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tatami and wood floor-export_7
+      name: Clay_wall-export_2
       rect:
         serializedVersion: 2
         x: 256
@@ -282,14 +172,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6ecf27639f87b64487072c34cf7464a
-      internalID: -2124704358
+      spriteID: 002d777007c39a24fadb6b2037d8d8a2
+      internalID: 987243360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tatami and wood floor-export_8
+      name: Clay_wall-export_3
       rect:
         serializedVersion: 2
         x: 384
@@ -304,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 184e53d8107a48a4e8a11de3c5dd272d
-      internalID: 1142142902
+      spriteID: de08ea5bc2aca1b4e87f3194aee2a128
+      internalID: -1633486391
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tatami and wood floor-export_9
+      name: Clay_wall-export_4
       rect:
         serializedVersion: 2
         x: 0
@@ -326,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25be973d64c76f242929833a07855093
-      internalID: -1329610650
+      spriteID: 5b8ca362db5f3af45b0603975950e3d6
+      internalID: -2094988544
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tatami and wood floor-export_10
+      name: Clay_wall-export_5
       rect:
         serializedVersion: 2
         x: 128
@@ -348,14 +238,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6ad332d4d5738646ad7de6d1fb72ce8
-      internalID: 383244002
+      spriteID: f544ee5bd9359ef44a1f640d690f7158
+      internalID: -30408900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tatami and wood floor-export_11
+      name: Clay_wall-export_6
       rect:
         serializedVersion: 2
         x: 256
@@ -370,14 +260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4379d9319cfaca46928de23077e95a2
-      internalID: -1093170976
+      spriteID: 3124f5c0495b7c244a4ff2b27e80d6bf
+      internalID: 710048288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tatami and wood floor-export_12
+      name: Clay_wall-export_7
       rect:
         serializedVersion: 2
         x: 384
@@ -392,8 +282,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e0d2661db53f3b45b1b6ff53114d7f3
-      internalID: -637157098
+      spriteID: 36d37f7febe03ce4aa641dae398b76d3
+      internalID: -241482864
       vertices: []
       indices: 
       edges: []
@@ -402,7 +292,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 69a6adaf941c1484d9d0417816e290b8
+    spriteID: 574ae3b7eefce314d92e9540c51966fb
     internalID: 0
     vertices: []
     indices: 
@@ -414,19 +304,14 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Tatami and wood floor-export_0: 6363571537917285267
-      Tatami and wood floor-export_1: 1251111827
-      Tatami and wood floor-export_10: 383244002
-      Tatami and wood floor-export_11: -1093170976
-      Tatami and wood floor-export_12: -637157098
-      Tatami and wood floor-export_2: -847476058
-      Tatami and wood floor-export_3: 356575882
-      Tatami and wood floor-export_4: 657868148
-      Tatami and wood floor-export_5: 468791535
-      Tatami and wood floor-export_6: 311352718
-      Tatami and wood floor-export_7: -2124704358
-      Tatami and wood floor-export_8: 1142142902
-      Tatami and wood floor-export_9: -1329610650
+      Clay_wall-export_0: 1265598383866899023
+      Clay_wall-export_1: -1674223122
+      Clay_wall-export_2: 987243360
+      Clay_wall-export_3: -1633486391
+      Clay_wall-export_4: -2094988544
+      Clay_wall-export_5: -30408900
+      Clay_wall-export_6: 710048288
+      Clay_wall-export_7: -241482864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
