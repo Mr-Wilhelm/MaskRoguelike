@@ -1,9 +1,11 @@
 using System;
+using System.Collections;
 using JetBrains.Annotations;
 using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements;
 
 public class EnemyAI : MonoBehaviour
@@ -11,24 +13,42 @@ public class EnemyAI : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
     private GameObject player;
+    private NavMeshAgent navMeshAgent;
     private bool canAttack = true;
     private float timeStamp;
     private bool stunned = false;
     private Rigidbody2D rb2d;
 
+
     [Header("Enemy Stats")]
     public float health = 5;
     public float damage = 1;
-    public float moveSpeed = 10;
+    public float moveSpeed;
     public int enemyLevel = 1; // Level 1 = Blue, Level 2 = Red
     public float hitStunTime = 0.8f;
     public int lowerBoundMaskDrop = 1;
     public int upperBoundMaskDrop = 3;
 
+    [Header("Enemy Status Conditions")]
+    [SerializeField] private bool isBurning = false;
+    [SerializeField] private bool isFrosty = false;
+
     [Header("NavMesh Variables")]
     private NavMeshAgent agent;
     public Vector3 navMeshTarget = new Vector3(10, 10, 0);
     private NavMeshPath path;
+
+    public PlayerAttack playerAttackScript;
+    public enum DamageType
+    {
+        Default,
+        Fire,
+        Ice
+    }
+
+    private float burnEffectTime, frostEffectTime = 0.0f;
+
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -36,6 +56,7 @@ public class EnemyAI : MonoBehaviour
     {
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
+        navMeshAgent = GetComponent<NavMeshAgent>();
 
         rb2d = GetComponent<Rigidbody2D>();
 
@@ -61,6 +82,8 @@ public class EnemyAI : MonoBehaviour
         agent.CalculatePath(navMeshTarget, path);
         agent.SetPath(path);
         agent.isStopped = true;
+
+        moveSpeed = navMeshAgent.speed;
 
     }
 
@@ -126,18 +149,39 @@ public class EnemyAI : MonoBehaviour
                     spriteRenderer.flipX = false;
                 }
                 agent.CalculatePath(navMeshTarget, path);
-                Debug.Log("Recalculating Path");
                 agent.SetPath(path);
-                Debug.Log("Setting Path");
                 agent.isStopped = true;
             }
+            
+        }
+
+        if (isBurning)
+        {
+            if(burnEffectTime > playerAttackScript.GetBurnDuration()) { return; }
+            
+            burnEffectTime += Time.fixedDeltaTime;
+            health -= playerAttackScript.GetBurnDamageOverTime() * Time.fixedDeltaTime;
+        }
+
+        if (isFrosty)
+        {
+            if (frostEffectTime > playerAttackScript.GetFrostSlowDuration())
+            {
+                navMeshAgent.speed = moveSpeed;
+                return;
+            }
+
+            frostEffectTime += Time.fixedDeltaTime;
+            navMeshAgent.speed = playerAttackScript.GetFrostReductionAmount();
             
         }
     }
 
     // Example Usage: TakeDamage(1, player.transform.position);
-    public void TakeDamage(float amount, Vector3 knockbackSource, float knockbackModifier = 1f)
+    public void TakeDamage(float amount, Vector3 knockbackSource, DamageType damageType, float knockbackModifier = 1f)
     {
+
+
         // Turning off the NavMeshAgent so that it doesnt overwrite the position or teleport the enemy immediately back to the player when the stun is over
         agent.isStopped = true;
         agent.ResetPath();
@@ -147,12 +191,20 @@ public class EnemyAI : MonoBehaviour
         // Sets the stun cooldown
         timeStamp = Time.time + hitStunTime;
 
+        //status condition check
+        if (damageType == DamageType.Fire)
+            isBurning = true;
+        else if (damageType == DamageType.Ice)
+            isFrosty = true;
+
         // Knockback calculation and implementation
         Vector3 force = (transform.position - knockbackSource).normalized * (knockbackModifier * 1000);
         if (!stunned){GetComponent<Rigidbody2D>().AddForce(new Vector2(force.x, force.y));}
         
         // I wonder what this does
         stunned = true;
+
+
 
         // Deals with damage and death checks
         health -= amount;

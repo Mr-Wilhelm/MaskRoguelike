@@ -32,16 +32,39 @@ public class WeaponHit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //triple nested if statements im so sorry
         if(collision.gameObject.tag == "Enemy")
         {
             if(collision.TryGetComponent<EnemyAI>(out var enemy))
             {
                 Debug.Log("Enemy Hit");
 
-                enemy.TakeDamage(
+                if(playerAttackScript.isPrimaryAttacking)   //is doing primary attack
+                {
+                    enemy.TakeDamage(
+                        playerAttackScript.GetWeaponDamage(),
+                        playerAttackScript.transform.position,
+                        EnemyAI.DamageType.Fire,
+                        playerAttackScript.GetWeaponKnockback());
+                }
+                else if(playerAttackScript.isSecondaryAttacking)    //is doing secondary attack
+                {
+                    enemy.TakeDamage(
                     playerAttackScript.GetWeaponDamage(),
                     playerAttackScript.transform.position,
+                    EnemyAI.DamageType.Ice,
                     playerAttackScript.GetWeaponKnockback());
+                }
+                else //is doing an invalid attack type? (sanity check)
+                {
+                    enemy.TakeDamage(
+                    playerAttackScript.GetWeaponDamage(),
+                    playerAttackScript.transform.position,
+                    EnemyAI.DamageType.Default,
+                    playerAttackScript.GetWeaponKnockback());
+                }
+
+
             }
             else
             {

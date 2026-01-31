@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField]
     private InputActionReference secondaryAttackRef;
 
-    private enum AttackType
+    public enum AttackType
     {
         Default,
         primary,
@@ -42,6 +42,36 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField]
     private float weaponKnockbackStrength = 1.0f;
+
+    public bool isPrimaryAttacking = false;
+
+    public bool isSecondaryAttacking = false;
+
+    [Header("Weapon Status Effects")]
+
+    public float burnDamageOverTime = 0.1f;
+
+    public float burnDuration = 1.0f;
+
+    public float frostMovementSpeedReduction = 1.0f;
+
+    public float frostDuration = 1.0f;
+
+    [Header("Weapon Upgrades")]
+
+    public int damageUpgrades = 0;
+
+    public int knockbackUpgrades = 0;
+
+    public int burnDamageUpgrades = 0;
+
+    public int burnDurationUpgrades = 0;
+
+    public int frostSlowUpgrades = 0;
+
+    public int frostDurationUpgrades = 0;
+
+    public float weaponUpgradeDecay = 0.9f;
 
     void OnEnable()
     {
@@ -90,10 +120,12 @@ public class PlayerAttack : MonoBehaviour
         switch (attackType)
         {
             case AttackType.primary:
-                Debug.Log("Primary Attack");
+                isPrimaryAttacking = true;
+                isSecondaryAttacking = false;
                 break;
             case AttackType.secondary:
-                Debug.Log("Secondary Attack");
+                isPrimaryAttacking = false;
+                isSecondaryAttacking = true;
                 break;
         }
 
@@ -112,12 +144,31 @@ public class PlayerAttack : MonoBehaviour
 
     public float GetWeaponDamage()
     {
-        return weaponDamage;
+        return weaponDamage * 1.0f + (1.0f - Mathf.Pow(weaponUpgradeDecay, damageUpgrades));
     }
 
     public float GetWeaponKnockback()
     {
-        return weaponKnockbackStrength;
+        return weaponKnockbackStrength * 1.0f + (1.0f - Mathf.Pow(weaponUpgradeDecay, knockbackUpgrades));
+    }
+
+    public float GetBurnDamageOverTime()
+    {
+        return burnDamageOverTime * 1.0f + (1.0f - Mathf.Pow(weaponUpgradeDecay, burnDamageUpgrades));
+    }
+
+    public float GetBurnDuration()
+    {
+        return burnDuration * 1.0f + (1.0f - Mathf.Pow(weaponUpgradeDecay, burnDurationUpgrades));
+    }
+    public float GetFrostReductionAmount()
+    {
+        return frostMovementSpeedReduction * 1.0f + (1.0f - Mathf.Pow(weaponUpgradeDecay, frostSlowUpgrades));
+    }
+
+    public float GetFrostSlowDuration()
+    {
+        return frostDuration * 1.0f + (1.0f - Mathf.Pow(weaponUpgradeDecay, frostDurationUpgrades));
     }
 
 }

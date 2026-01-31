@@ -64,11 +64,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private int healthUpgrades = 1;
 
-    [SerializeField]
-    private int damageUpgrades = 1;
-
-
-
     private Rigidbody2D rb;
     private Vector2 moveInput;
 

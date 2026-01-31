@@ -423,6 +423,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.14, y: 0.17}
   m_EdgeRadius: 0
+--- !u!114 &884703555 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+  m_PrefabInstance: {fileID: 1524534792}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884703548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe2cb7c2863b544db17492796c11403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
 --- !u!1 &992645642 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2030676005253394571, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
@@ -525,6 +536,14 @@ PrefabInstance:
       propertyPath: health
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 6669337070292709069, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
+      propertyPath: slowedMoveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6669337070292709069, guid: e58aa1f3d21103d42ba4b7df3aba568b, type: 3}
+      propertyPath: playerAttackScript
+      value: 
+      objectReference: {fileID: 884703555}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -766,6 +785,38 @@ PrefabInstance:
     - target: {fileID: 6742349494478658339, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: burnDuration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: frostDuration
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: damageUpgrades
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: frostSlowUpgrades
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: knockbackUpgrades
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: burnDamageUpgrades
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: burnDurationUpgrades
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: frostDurationUpgrades
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
