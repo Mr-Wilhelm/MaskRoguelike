@@ -74,8 +74,6 @@ public class PlayerAttack : MonoBehaviour
         }
 
         if (!canAttack) { return; }
-        
-        weaponHitArea.GetComponent<PolygonCollider2D>().enabled = true;
 
         switch (attackType)
         {
@@ -94,7 +92,6 @@ public class PlayerAttack : MonoBehaviour
     {
         canAttack = false;
         yield return new WaitForSeconds(weaponAttackDuration);
-        weaponHitArea.GetComponent<PolygonCollider2D>().enabled = false;
         yield return new WaitForSeconds(weaponAttackCooldown);
         canAttack = true;
     }
