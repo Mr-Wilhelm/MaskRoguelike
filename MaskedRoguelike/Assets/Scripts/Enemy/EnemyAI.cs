@@ -61,6 +61,15 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
+            // navMeshTarget = GET PLAYER POSITION
+            if (navMeshTarget.x > transform.position.x)
+            {
+                spriteRenderer.flipX = true;
+            }
+            else
+            {
+                spriteRenderer.flipX = false;
+            }
             agent.CalculatePath(navMeshTarget, path);
             agent.SetPath(path);
             agent.isStopped = true;
