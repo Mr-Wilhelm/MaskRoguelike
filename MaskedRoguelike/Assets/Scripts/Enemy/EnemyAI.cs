@@ -18,6 +18,7 @@ public class EnemyAI : MonoBehaviour
     private float timeStamp;
     private bool stunned = false;
     private Rigidbody2D rb2d;
+    private bool dead = false;
 
 
     [Header("Enemy Stats")]
@@ -112,7 +113,7 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            rb2d.linearDamping = 5f;
+            rb2d.linearDamping = 3f;
             if (stunned)
             {
                 if (timeStamp <= Time.time)
@@ -214,7 +215,13 @@ public class EnemyAI : MonoBehaviour
         health -= amount;
         if (health <= 0)
         {
-            // PLAY DEATH ANIMATION
+            if (!dead)
+            {
+                dead = true;
+                GameObject.FindGameObjectWithTag("RoomManager").GetComponent<RoomManagerScript>().enemiesLeft -= 1;
+                // PLAY DEATH ANIMATION
+            }
+            
         }
         
     }

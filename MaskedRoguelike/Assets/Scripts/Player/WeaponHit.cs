@@ -40,7 +40,7 @@ public class WeaponHit : MonoBehaviour
             GameObject enemyGameObject = collision.GetComponentInParent<Transform>().parent.gameObject;
             if(enemyGameObject.TryGetComponent<EnemyAI>(out var enemy))
             {
-                Debug.Log("Enemy Hit");
+                //Debug.Log("Enemy Hit");
 
                 if(playerAttackScript.isPrimaryAttacking)   //is doing primary attack
                 {
