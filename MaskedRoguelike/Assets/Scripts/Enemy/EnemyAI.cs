@@ -141,6 +141,7 @@ public class EnemyAI : MonoBehaviour
                 {
                     int MASK_DROP_VAL = UnityEngine.Random.Range(lowerBoundMaskDrop, upperBoundMaskDrop);
                     player.GetComponent<PlayerMaskCount>().AddMasks(MASK_DROP_VAL);
+                    GameObject.FindGameObjectWithTag("RoomManager").GetComponent<RoomManagerScript>().enemiesLeft -= 1;
 
                     Destroy(gameObject);
                     return;
@@ -247,7 +248,6 @@ public class EnemyAI : MonoBehaviour
             if (!dead)
             {
                 dead = true;
-                GameObject.FindGameObjectWithTag("RoomManager").GetComponent<RoomManagerScript>().enemiesLeft -= 1;
                 animator.SetBool("isDead", true);
             }
             

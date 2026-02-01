@@ -52,6 +52,9 @@ public class RoomManagerScript : MonoBehaviour
     {
         if (justLeftVendor)
         {
+            exitDoors[0].GetComponent<DoorLogic>().LockDoor();
+            exitDoors[1].GetComponent<DoorLogic>().LockDoor();
+            exitDoors[2].GetComponent<DoorLogic>().LockDoor();
             Debug.Log("Leaving Vendor Room");
             Debug.Log("Before: " + currentRoom);
             currentRoom = UnityEngine.Random.Range(1, 4);
