@@ -1,13 +1,16 @@
+using TMPro;
 using UnityEngine;
 
 public class PlayerMaskCount : MonoBehaviour
 {
     [SerializeField]
     private int maskCount;
+    public TextMeshProUGUI counterText;
 
     public void AddMasks(int amount)
     {
         maskCount += amount;
+        counterText.text = "x " + maskCount;
     }
 
     public bool RemoveMasks(int amount)
@@ -21,7 +24,7 @@ public class PlayerMaskCount : MonoBehaviour
             maskCount -= amount;
             return true;
         }
-
+        counterText.text = "x " + maskCount;
         return false;
     }
 }
