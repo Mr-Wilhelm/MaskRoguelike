@@ -7,4 +7,9 @@ public class SceneManagerScript : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void LoadDeathScene()
+    {
+        SceneManager.LoadScene(2);
+    }
 }

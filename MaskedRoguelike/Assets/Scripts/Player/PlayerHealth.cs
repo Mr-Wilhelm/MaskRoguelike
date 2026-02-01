@@ -47,7 +47,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
-        Application.Quit();
+        GameObject.Find("SceneManagerObj").GetComponent<SceneManagerScript>().LoadDeathScene();
         //some other logic for game over screen or restarting the game
     }
 
