@@ -66,7 +66,6 @@ public class PlayerMovement : MonoBehaviour
     public int moveUpgrades = 1;
 
 
-
     private Rigidbody2D rb;
     private Vector2 moveInput;
 
@@ -137,6 +136,7 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator Dodge()
     {
         canDodge = false;
+        animator.SetBool("isDodging", true);
         float priorDodgeSpeed = moveSpeed;
         moveSpeed = (baseMoveSpeed * dodgeSpeedModifier);
         isInvulnerable = true;
@@ -146,6 +146,7 @@ public class PlayerMovement : MonoBehaviour
         isInvulnerable = false;
         yield return new WaitForSeconds(dodgeCooldown);
 
+        animator.SetBool("isDodging", false);
         canDodge = true;
     }
 }
