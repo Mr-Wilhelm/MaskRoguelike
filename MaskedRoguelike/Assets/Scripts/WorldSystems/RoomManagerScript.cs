@@ -8,6 +8,7 @@ public class RoomManagerScript : MonoBehaviour
     public GameObject [] exitDoors;
     public GameObject [] roomEnemySpawnManagers;
     private GameObject player;
+    private GameObject merchant;
     public bool justLeftVendor = true;
     public bool inVendorRoom = false;
     public int currentRoom = -1;
@@ -19,6 +20,7 @@ public class RoomManagerScript : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        merchant = GameObject.FindGameObjectWithTag("Merchant");
         NextRoom();
     }
 
@@ -72,6 +74,7 @@ public class RoomManagerScript : MonoBehaviour
         }
         else
         {
+            merchant.SetActive(true);
             exitDoors[3].GetComponent<DoorLogic>().UnlockDoor();
             Debug.Log("Leaving Enemy Room");
             currentRoom = -1;

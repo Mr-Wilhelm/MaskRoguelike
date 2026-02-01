@@ -136,7 +136,7 @@ public class EnemyAI : MonoBehaviour
                 if (health <= 0)
                 {
                     int MASK_DROP_VAL = UnityEngine.Random.Range(lowerBoundMaskDrop, upperBoundMaskDrop);
-                    // CALL FUNCTION ON PLAYER SCRIPT TO ADD MASK_DROP_VAL NUMBER OF MASKS TO MASK_COUNTER
+                    player.GetComponent<PlayerMaskCount>().AddMasks(MASK_DROP_VAL);
 
                     Destroy(gameObject);
                     return;
@@ -232,7 +232,9 @@ public class EnemyAI : MonoBehaviour
         {
             
             // REPLACE WITH SOME FUNCTION CALL TO THE PLAYER THAT HANDLES DAMAGE, SHOULD INCLUDE DAMAGE AMOUNT AND POSITION OF DAMAGE SOURCE FOR KNOCKBACK CALCULATIONS
-            // player.GetComponent<DamageHandlerScript>().TakeDamage(damage, transform.position)
+            
+            player.GetComponent<PlayerHealth>().TakeDamage(damage, transform.position, 1);
+
 
             canAttack = false;
         }

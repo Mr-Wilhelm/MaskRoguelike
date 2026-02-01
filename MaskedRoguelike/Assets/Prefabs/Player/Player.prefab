@@ -194,6 +194,8 @@ GameObject:
   - component: {fileID: 3323472721785442279}
   - component: {fileID: 8077684452906662861}
   - component: {fileID: 1061772937523488948}
+  - component: {fileID: 128919851277438026}
+  - component: {fileID: 6718665682880839169}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -427,6 +429,7 @@ MonoBehaviour:
   canVisitShop: 0
   playerCanvas: {fileID: 376321704489146183}
   interactImage: {fileID: 921671016297514096}
+  shopScript: {fileID: 0}
 --- !u!61 &8077684452906662861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -495,6 +498,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &128919851277438026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632567355477829867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e1c854fd9797f459f0dd89f6fe42a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  playerMaxHealth: 10
+  playerBaseMaxHealth: 10
+  playerCurrentHealth: 10
+  healthUpgradeDecay: 0.9
+  maxHealthUpgrades: 1
+--- !u!114 &6718665682880839169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632567355477829867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08357514d67c2064a97c96feb978f704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMaskCount
+  maskCount: 20
 --- !u!1 &5194033795664441593
 GameObject:
   m_ObjectHideFlags: 0

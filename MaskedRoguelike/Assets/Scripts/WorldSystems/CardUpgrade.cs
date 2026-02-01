@@ -59,6 +59,8 @@ public class CardUpgrade : MonoBehaviour
 
     public void RandomiseUpgrade()
     {
+        GetComponentInChildren<TextMeshProUGUI>().enabled = true;
+        
         cardType = (CardTypes)Random.Range(1, 8);
 
         print("card " + gameObject.name + " : " + cardType);
