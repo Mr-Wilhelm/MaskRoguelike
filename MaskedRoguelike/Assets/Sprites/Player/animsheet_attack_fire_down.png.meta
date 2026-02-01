@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -132,7 +132,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -160,12 +160,12 @@ TextureImporter:
       name: animsheet_attack_fire_down_0
       rect:
         serializedVersion: 2
-        x: 207
+        x: 208
         y: 127
-        width: 98
-        height: 122
+        width: 136
+        height: 225
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -179,37 +179,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animsheet_attack_fire_down_1
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 175
-        width: 42
-        height: 178
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc6d4491765396a90800000000000000
-      internalID: -7320261002392185140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: animsheet_attack_fire_down_2
       rect:
         serializedVersion: 2
         x: 719
         y: 127
-        width: 98
-        height: 122
+        width: 146
+        height: 209
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -223,37 +201,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animsheet_attack_fire_down_3
-      rect:
-        serializedVersion: 2
-        x: 823
-        y: 175
-        width: 42
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 714d571a76e5aba80800000000000000
-      internalID: -8450337951623818217
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: animsheet_attack_fire_down_4
       rect:
         serializedVersion: 2
-        x: 1231
+        x: 1230
         y: 127
-        width: 98
-        height: 122
+        width: 187
+        height: 137
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -267,37 +223,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animsheet_attack_fire_down_5
-      rect:
-        serializedVersion: 2
-        x: 1359
-        y: 135
-        width: 58
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 00c0810a739460d10800000000000000
-      internalID: 2091439580218133504
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: animsheet_attack_fire_down_6
       rect:
         serializedVersion: 2
         x: 1743
-        y: 127
-        width: 98
-        height: 122
+        y: 96
+        width: 249
+        height: 153
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -311,37 +245,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animsheet_attack_fire_down_7
-      rect:
-        serializedVersion: 2
-        x: 1871
-        y: 95
-        width: 122
-        height: 130
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ce572242f683aaca0800000000000000
-      internalID: -6004925103146371604
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: animsheet_attack_fire_down_8
       rect:
         serializedVersion: 2
         x: 2255
-        y: 127
-        width: 98
-        height: 122
+        y: 80
+        width: 265
+        height: 169
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -363,7 +275,7 @@ TextureImporter:
         width: 410
         height: 249
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -380,12 +292,12 @@ TextureImporter:
       name: animsheet_attack_fire_down_10
       rect:
         serializedVersion: 2
-        x: 3167
-        y: 127
-        width: 210
-        height: 154
+        x: 3152
+        y: 40
+        width: 345
+        height: 241
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -399,37 +311,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: animsheet_attack_fire_down_11
-      rect:
-        serializedVersion: 2
-        x: 3711
-        y: 183
-        width: 50
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 18552f3cad585ecd0800000000000000
-      internalID: -2529468441061862015
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: animsheet_attack_fire_down_12
       rect:
         serializedVersion: 2
-        x: 3767
-        y: 127
-        width: 122
-        height: 218
+        x: 3712
+        y: 56
+        width: 192
+        height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -442,165 +332,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: animsheet_attack_fire_down_13
-      rect:
-        serializedVersion: 2
-        x: 2343
-        y: 79
-        width: 178
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd038fe051a24cc40800000000000000
-      internalID: 5531592512251637979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animsheet_attack_fire_down_14
-      rect:
-        serializedVersion: 2
-        x: 3471
-        y: 143
-        width: 26
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9b1b3f10c5147c480800000000000000
-      internalID: -8879056276912098887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animsheet_attack_fire_down_15
-      rect:
-        serializedVersion: 2
-        x: 3151
-        y: 71
-        width: 58
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7c48f6dbb6c69cb0800000000000000
-      internalID: -4857476638004720515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animsheet_attack_fire_down_16
-      rect:
-        serializedVersion: 2
-        x: 3271
-        y: 39
-        width: 82
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8999fdaff7b0a03f0800000000000000
-      internalID: -933921328428246632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animsheet_attack_fire_down_17
-      rect:
-        serializedVersion: 2
-        x: 3383
-        y: 55
-        width: 58
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5058d236055a609f0800000000000000
-      internalID: -502532543725337339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animsheet_attack_fire_down_18
-      rect:
-        serializedVersion: 2
-        x: 3751
-        y: 79
-        width: 34
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee64664b866df70b0800000000000000
-      internalID: -5728624455800437010
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: animsheet_attack_fire_down_19
-      rect:
-        serializedVersion: 2
-        x: 3879
-        y: 55
-        width: 26
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fb04b463d0f977e50800000000000000
-      internalID: 6807084240888086719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 01e9bcb75112e55438d0ef4ed9fa0b88
     internalID: 0
     vertices: []
     indices: 
