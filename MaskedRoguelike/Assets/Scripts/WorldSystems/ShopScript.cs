@@ -7,6 +7,9 @@ public class ShopScript : MonoBehaviour
     [SerializeField]
     private CardUpgrade[] cardUpgrades;
 
+    [SerializeField]
+    private GameObject merchant;
+
     public void EnterShop()
     {
         GetComponent<Canvas>().enabled = true;
@@ -17,5 +20,6 @@ public class ShopScript : MonoBehaviour
     public void LeaveShop()
     {
         GetComponent<Canvas>().enabled = false;
+        merchant.SetActive(false);
     }
 }

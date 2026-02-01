@@ -12,9 +12,16 @@ public class PlayerMaskCount : MonoBehaviour
 
     public bool RemoveMasks(int amount)
     {
-        if (maskCount < amount) { return false; }
+        if(maskCount < amount)
+        {
+            return false;
+        }
+        else if(maskCount >= amount)
+        {
+            maskCount -= amount;
+            return true;
+        }
 
-        maskCount -= amount;
-        return true;
+        return false;
     }
 }

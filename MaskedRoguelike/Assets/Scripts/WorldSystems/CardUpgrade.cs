@@ -1,6 +1,7 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class CardUpgrade : MonoBehaviour
 {
@@ -11,12 +12,31 @@ public class CardUpgrade : MonoBehaviour
     [SerializeField]
     private string[] cardTexts;
 
+    [SerializeField]
+    private int cardCost;
+
     [Header("Card Components")]
     [SerializeField]
     private TextMeshProUGUI cardText;
 
     [SerializeField]
     private Image cardSprite;
+
+    [SerializeField]
+    private CardTypes cardType;
+
+    [Header("Player Script References")]
+    [SerializeField]
+    private PlayerAttack playerAttackScript;
+
+    [SerializeField]
+    private PlayerHealth playerHealthScript;
+
+    [SerializeField]
+    private PlayerMovement playerMoveScript;
+
+    [SerializeField]
+    private PlayerMaskCount playerMaskCountScript;
 
     public enum CardTypes
     {
@@ -26,7 +46,9 @@ public class CardUpgrade : MonoBehaviour
         Heal,
         MaxHealth,
         BurnDamage,
-        BurnDuration
+        BurnDuration,
+        MoveSpeed,
+        KnockbackStrength
     }
 
     private void Awake()
@@ -37,7 +59,7 @@ public class CardUpgrade : MonoBehaviour
 
     public void RandomiseUpgrade()
     {
-        CardTypes cardType = (CardTypes)Random.Range(1, 6);
+        cardType = (CardTypes)Random.Range(1, 8);
 
         print("card " + gameObject.name + " : " + cardType);
 
@@ -67,6 +89,53 @@ public class CardUpgrade : MonoBehaviour
                 cardSprite.sprite = cardSprites[2];
                 cardText.text = cardTexts[5];
                 break;
+            case CardTypes.MoveSpeed:
+                cardSprite.sprite = cardSprites[3];
+                cardText.text = cardTexts[6];
+                break;
+            case CardTypes.KnockbackStrength:
+                cardSprite.sprite = cardSprites[4];
+                cardText.text = cardTexts[7];
+                break;
+        }
+    }
+
+    public void BuyUpgrade()
+    {
+        if (playerMaskCountScript.RemoveMasks(cardCost))
+        {
+            switch (cardType)
+            {
+
+                case CardTypes.FrostStrength:
+                    playerAttackScript.frostMovementSpeedReduction += 1;
+                    break;
+                case CardTypes.FrostDuration:
+                    playerAttackScript.frostDuration += 1;
+                    break;
+                case CardTypes.Heal:
+                    playerHealthScript.Heal(10.0f);
+                    break;
+                case CardTypes.MaxHealth:
+                    playerHealthScript.AddMaxHealthUpgrade(1);
+                break;
+                case CardTypes.BurnDamage:
+                    playerAttackScript.burnDamageOverTime += 1;
+                    break;
+                case CardTypes.BurnDuration:
+                    playerAttackScript.burnDuration += 1;
+                    break;
+                case CardTypes.MoveSpeed:
+                    playerMoveScript.moveUpgrades += 1;
+                    break;
+                case CardTypes.KnockbackStrength:
+                    playerAttackScript.knockbackUpgrades += 1;
+                    break;
+            }
+        }
+        else
+        {
+            return;
         }
     }
 }

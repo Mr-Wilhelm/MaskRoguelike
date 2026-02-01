@@ -63,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Player Upgrades")]
     [SerializeField]
-    private int moveUpgrades = 1;
+    public int moveUpgrades = 1;
 
 
 

@@ -7,6 +7,9 @@ public class PlayerHealth : MonoBehaviour
     private float playerMaxHealth;
 
     [SerializeField]
+    private float playerBaseMaxHealth = 10.0f;
+
+    [SerializeField]
     private float playerCurrentHealth;
 
     [Header("Health Upgrades")]
@@ -14,17 +17,17 @@ public class PlayerHealth : MonoBehaviour
     private float healthUpgradeDecay = 0.9f;
 
     [SerializeField]
-    private int maxHealthUpgrades = 1;
+    public int maxHealthUpgrades = 1;
 
-    private void Update()
+    private void Start()
     {
-        //commented out because bugged
-        //playerMaxHealth = GetPlayerMaxHealth();
+        RecalculateMaxHealth();
+        playerCurrentHealth = playerMaxHealth;
     }
 
     public void TakeDamage(float amount, Vector3 damageSourcePos, float knockbackModifier)
     {
-        if(playerCurrentHealth <= 0) { Die(); return; }
+        if (playerCurrentHealth <= 0) { Die(); return; }
 
         playerCurrentHealth -= amount;
 
@@ -42,10 +45,27 @@ public class PlayerHealth : MonoBehaviour
     {
         Destroy(gameObject);
         //some other logic for game over screen or restarting the game
+    
+    
+    }
+
+    public void AddMaxHealthUpgrade(int amount)
+    {
+        maxHealthUpgrades += amount;
+
+        RecalculateMaxHealth();
+    }
+
+    private void RecalculateMaxHealth()
+    {
+        float bonusHealth = 5f * (1f - Mathf.Pow(healthUpgradeDecay, maxHealthUpgrades));
+        playerMaxHealth = playerBaseMaxHealth + bonusHealth;
+
+        playerCurrentHealth = Mathf.Min(playerCurrentHealth, playerMaxHealth);
     }
 
     public float GetPlayerMaxHealth()
     {
-        return playerMaxHealth * 1.0f + (1.0f - Mathf.Pow(healthUpgradeDecay, maxHealthUpgrades));
+        return playerMaxHealth;
     }
 }
