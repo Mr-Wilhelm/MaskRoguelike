@@ -196,6 +196,8 @@ GameObject:
   - component: {fileID: 1061772937523488948}
   - component: {fileID: 128919851277438026}
   - component: {fileID: 6718665682880839169}
+  - component: {fileID: 6774284592483732622}
+  - component: {fileID: 806563877713308287}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -320,7 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   moveRef: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   dodgeRef: {fileID: -7471211009204490832, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  animator: {fileID: 0}
+  animator: {fileID: 1061772937523488948}
   moveSpeed: 10
   baseMoveSpeed: 10
   totalMoveSpeed: 0
@@ -367,6 +369,7 @@ MonoBehaviour:
   frostSlowUpgrades: 1
   frostDurationUpgrades: 1
   weaponUpgradeDecay: 0.9
+  animator: {fileID: 1061772937523488948}
 --- !u!61 &8800702870271254278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -427,7 +430,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteract
   interactRef: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   canVisitShop: 0
-  playerCanvas: {fileID: 376321704489146183}
+  playerCanvas: {fileID: 0}
   interactImage: {fileID: 921671016297514096}
   shopScript: {fileID: 0}
 --- !u!61 &8077684452906662861
@@ -528,6 +531,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMaskCount
   maskCount: 20
+--- !u!114 &6774284592483732622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632567355477829867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08357514d67c2064a97c96feb978f704, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMaskCount
+  maskCount: 50
+--- !u!114 &806563877713308287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3632567355477829867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e1c854fd9797f459f0dd89f6fe42a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  playerMaxHealth: 10
+  playerBaseMaxHealth: 10
+  playerCurrentHealth: 10
+  healthUpgradeDecay: 0.9
+  maxHealthUpgrades: 1
 --- !u!1 &5194033795664441593
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +586,7 @@ Transform:
   m_GameObject: {fileID: 5194033795664441593}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.217, y: -0.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -588,8 +621,8 @@ Transform:
   m_GameObject: {fileID: 7593773379589820746}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.134, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.775, z: 0}
+  m_LocalScale: {x: 5.0659, y: 5.0659, z: 5.0659}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2543666085925263131}
@@ -610,6 +643,7 @@ MonoBehaviour:
   pivotPos: {fileID: 2543666085925263131}
   cam: {fileID: 0}
   playerAttackScript: {fileID: 8071534932383906030}
+  animator: {fileID: 1061772937523488948}
 --- !u!50 &8567389220124328867
 Rigidbody2D:
   serializedVersion: 5
@@ -644,7 +678,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7593773379589820746}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}

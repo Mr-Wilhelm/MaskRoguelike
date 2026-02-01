@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 512ed754221b89f41b9d9de236778ba7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3447506037553487785
+    second: animsheet_dash_left_0
+  - first:
+      213: -847780958783333589
+    second: animsheet_dash_left_1
+  - first:
+      213: 8970624472377668565
+    second: animsheet_dash_left_2
+  - first:
+      213: -8332471882797817344
+    second: animsheet_dash_left_3
+  - first:
+      213: 1572474790253731408
+    second: animsheet_dash_left_4
+  - first:
+      213: 1345717338662266800
+    second: animsheet_dash_left_5
+  - first:
+      213: 1568890886417323327
+    second: animsheet_dash_left_6
+  - first:
+      213: -5747628440371972477
+    second: animsheet_dash_left_7
+  - first:
+      213: 5097467080787359190
+    second: animsheet_dash_left_8
+  - first:
+      213: -3910136157980961550
+    second: animsheet_dash_left_9
+  - first:
+      213: 834731993467526136
+    second: animsheet_dash_left_10
+  - first:
+      213: 989894263711041374
+    second: animsheet_dash_left_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animsheet_dash_left_0
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 127
+        width: 122
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7502c96468ff720d0800000000000000
+      internalID: -3447506037553487785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_1
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 127
+        width: 122
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b1160b5b31c34f0800000000000000
+      internalID: -847780958783333589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_2
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 127
+        width: 154
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d33f71ed6f0e7c70800000000000000
+      internalID: 8970624472377668565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_3
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 127
+        width: 154
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002e7ec48fc1d5c80800000000000000
+      internalID: -8332471882797817344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_4
+      rect:
+        serializedVersion: 2
+        x: 2247
+        y: 127
+        width: 154
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05e945b8d7d82d510800000000000000
+      internalID: 1572474790253731408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_5
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 127
+        width: 154
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b76c032ac2fca210800000000000000
+      internalID: 1345717338662266800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_6
+      rect:
+        serializedVersion: 2
+        x: 3271
+        y: 127
+        width: 154
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f359048e2f1d5c510800000000000000
+      internalID: 1568890886417323327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_7
+      rect:
+        serializedVersion: 2
+        x: 3783
+        y: 127
+        width: 154
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38632beb2625c30b0800000000000000
+      internalID: -5747628440371972477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_8
+      rect:
+        serializedVersion: 2
+        x: 4295
+        y: 127
+        width: 154
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5f39c6d47ddb640800000000000000
+      internalID: 5097467080787359190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_9
+      rect:
+        serializedVersion: 2
+        x: 4807
+        y: 127
+        width: 154
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4522091e76cb9c0800000000000000
+      internalID: -3910136157980961550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_10
+      rect:
+        serializedVersion: 2
+        x: 5319
+        y: 127
+        width: 122
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fb19415350959b00800000000000000
+      internalID: 834731993467526136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_dash_left_11
+      rect:
+        serializedVersion: 2
+        x: 5831
+        y: 127
+        width: 122
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5781b1969fccbd00800000000000000
+      internalID: 989894263711041374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      animsheet_dash_left_0: -3447506037553487785
+      animsheet_dash_left_1: -847780958783333589
+      animsheet_dash_left_10: 834731993467526136
+      animsheet_dash_left_11: 989894263711041374
+      animsheet_dash_left_2: 8970624472377668565
+      animsheet_dash_left_3: -8332471882797817344
+      animsheet_dash_left_4: 1572474790253731408
+      animsheet_dash_left_5: 1345717338662266800
+      animsheet_dash_left_6: 1568890886417323327
+      animsheet_dash_left_7: -5747628440371972477
+      animsheet_dash_left_8: 5097467080787359190
+      animsheet_dash_left_9: -3910136157980961550
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
