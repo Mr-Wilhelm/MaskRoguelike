@@ -22,9 +22,9 @@ public class PlayerMaskCount : MonoBehaviour
         else if(maskCount >= amount)
         {
             maskCount -= amount;
+            counterText.text = "x " + maskCount;
             return true;
-        }
-        counterText.text = "x " + maskCount;
+        }    
         return false;
     }
 }
