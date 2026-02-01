@@ -44,6 +44,7 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+        Application.Quit();
         //some other logic for game over screen or restarting the game
     
     
