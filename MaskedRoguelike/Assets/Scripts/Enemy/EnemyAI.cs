@@ -162,10 +162,17 @@ public class EnemyAI : MonoBehaviour
         //status condition checks for when the player attacks
         if (isBurning)
         {
-            if(burnEffectTime > playerAttackScript.GetBurnDuration()) { return; }
+            if(burnEffectTime > playerAttackScript.GetBurnDuration())
+            {
+                animator.SetBool("isBurning", false);
+                isBurning = false;
+                burnEffectTime = 0.0f;
+                return;
+            }
             
             burnEffectTime += Time.fixedDeltaTime;
             health -= playerAttackScript.GetBurnDamageOverTime() * Time.fixedDeltaTime;
+            animator.SetBool("isBurning", true);
         }
 
         if (isFrosty)
@@ -173,12 +180,21 @@ public class EnemyAI : MonoBehaviour
             if (frostEffectTime > playerAttackScript.GetFrostSlowDuration())
             {
                 navMeshAgent.speed = moveSpeed;
+                animator.SetBool("isFrozen", false);
+                isFrosty = false;
+                frostEffectTime = 0.0f;
                 return;
             }
 
             frostEffectTime += Time.fixedDeltaTime;
             navMeshAgent.speed = playerAttackScript.GetFrostReductionAmount();
-            
+            animator.SetBool("isFrozen", true);
+
+        }
+
+        else if (!isFrosty) 
+        { 
+            animator.SetBool("isFrozen", false); 
         }
     }
 
@@ -198,9 +214,18 @@ public class EnemyAI : MonoBehaviour
 
         //status condition check
         if (damageType == DamageType.Fire)
-            isBurning = true;
+        {
+            isBurning = true; 
+
+        }
+
+         
         else if (damageType == DamageType.Ice)
-            isFrosty = true;
+        {
+            isFrosty = true; 
+
+        }
+
 
         // Knockback calculation and implementation
         Vector3 force = (transform.position - knockbackSource).normalized * (knockbackModifier * 1000);
@@ -219,7 +244,7 @@ public class EnemyAI : MonoBehaviour
             {
                 dead = true;
                 GameObject.FindGameObjectWithTag("RoomManager").GetComponent<RoomManagerScript>().enemiesLeft -= 1;
-                // PLAY DEATH ANIMATION
+                animator.SetBool("isDead", true);
             }
             
         }
