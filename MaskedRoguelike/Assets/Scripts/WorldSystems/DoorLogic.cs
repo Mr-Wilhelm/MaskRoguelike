@@ -3,6 +3,7 @@ using UnityEngine;
 public class DoorLogic : MonoBehaviour
 {
     public bool locked = true;
+    public bool vendorDoor = false;
 
     public void UnlockDoor()
     {
@@ -26,6 +27,8 @@ public class DoorLogic : MonoBehaviour
             if (other.gameObject.tag == "Player")
             {
                 GameObject.FindGameObjectWithTag("RoomManager").GetComponent<RoomManagerScript>().NextRoom();
+                locked = true;
+                
             }
         }
         

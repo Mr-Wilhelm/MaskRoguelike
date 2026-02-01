@@ -7,10 +7,7 @@ public class EnemySpawnManager : MonoBehaviour
 
     public GameObject [] spawnPoints;
 
-    void Start()
-    {
-        spawnEnemyWave(10);
-    }
+    
 
     public void spawnEnemyWave(int amount)
     {

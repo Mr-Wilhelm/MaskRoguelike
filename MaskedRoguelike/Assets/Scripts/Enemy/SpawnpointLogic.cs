@@ -5,7 +5,7 @@ public class SpawnpointLogic : MonoBehaviour
     public GameObject enemyPrefab;
     private int enemyAmount = 0;
     private float timeStamp;
-    private float lowerSpawnTimer = 6f;
+    private float lowerSpawnTimer = 4f;
     private float upperSpawnTimer = 12f;
     public void spawnTimer(int amount)
     {
