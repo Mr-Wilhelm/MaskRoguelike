@@ -118,7 +118,7 @@ public class CardUpgrade : MonoBehaviour
                     break;
                 case CardTypes.MaxHealth:
                     playerHealthScript.AddMaxHealthUpgrade(1);
-                break;
+                    break;
                 case CardTypes.BurnDamage:
                     playerAttackScript.burnDamageOverTime += 1;
                     break;
@@ -130,8 +130,14 @@ public class CardUpgrade : MonoBehaviour
                     break;
                 case CardTypes.KnockbackStrength:
                     playerAttackScript.knockbackUpgrades += 1;
+                    
                     break;
+
+
             }
+
+            GetComponent<Button>().interactable = false;
+            GetComponentInChildren<TextMeshProUGUI>().enabled = false;
         }
         else
         {

@@ -14,7 +14,11 @@ public class ShopScript : MonoBehaviour
     {
         GetComponent<Canvas>().enabled = true;
 
-        foreach (CardUpgrade upgrade in cardUpgrades) { upgrade.RandomiseUpgrade(); }
+        foreach (CardUpgrade upgrade in cardUpgrades)
+        {
+            upgrade.RandomiseUpgrade();
+            upgrade.GetComponent<Button>().interactable = true;
+        }
     }
 
     public void LeaveShop()
