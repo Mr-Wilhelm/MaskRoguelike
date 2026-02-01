@@ -184,8 +184,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CardUpgrade
   cardSprites:
   - {fileID: -9171590703602560802, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
-  - {fileID: 1677817288008994165, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
   - {fileID: 8770534341284262681, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
+  - {fileID: 1677817288008994165, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
   cardTexts:
   - Frost Attack Slow Effect Up
   - Frost Attack Slow Duration Up
@@ -194,6 +194,7 @@ MonoBehaviour:
   - Fire Attack Damage Up
   - Fire Attack Duration Up
   cardText: {fileID: 0}
+  cardSprite: {fileID: 0}
 --- !u!114 &90268856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +259,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1677817288008994165, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
+  m_Sprite: {fileID: -9171590703602560802, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -342,8 +343,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -360,7 +361,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.7
+  m_fontSize: 34
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -399,7 +400,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.893669, y: 3.1651173, z: 55.1439, w: 3.892109}
+  m_margin: {x: 9.619278, y: -1.5970345, z: 54.278606, w: -1.2220535}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -473,7 +474,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1677817288008994165, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
+  m_Sprite: {fileID: -9171590703602560802, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -549,8 +550,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CardUpgrade
   cardSprites:
   - {fileID: -9171590703602560802, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
-  - {fileID: 1677817288008994165, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
   - {fileID: 8770534341284262681, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
+  - {fileID: 1677817288008994165, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
   cardTexts:
   - Frost Attack Slow Effect Up
   - Frost Attack Slow Duration Up
@@ -559,6 +560,7 @@ MonoBehaviour:
   - Fire Attack Damage Up
   - Fire Attack Duration Up
   cardText: {fileID: 0}
+  cardSprite: {fileID: 0}
 --- !u!1 &435031792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,8 +1388,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1404,7 +1406,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.7
+  m_fontSize: 33.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1443,7 +1445,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.893669, y: 3.1651173, z: 55.1439, w: 3.892109}
+  m_margin: {x: 9.8300705, y: -1.6994743, z: 55.011955, w: -1.212059}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1681,8 +1683,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CardUpgrade
   cardSprites:
   - {fileID: -9171590703602560802, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
-  - {fileID: 1677817288008994165, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
   - {fileID: 8770534341284262681, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
+  - {fileID: 1677817288008994165, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
   cardTexts:
   - Frost Attack Slow Effect Up
   - Frost Attack Slow Duration Up
@@ -1691,6 +1693,7 @@ MonoBehaviour:
   - Fire Attack Damage Up
   - Fire Attack Duration Up
   cardText: {fileID: 0}
+  cardSprite: {fileID: 0}
 --- !u!114 &1139660988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1755,7 +1758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1677817288008994165, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
+  m_Sprite: {fileID: -9171590703602560802, guid: 2a82eff064d7ca948b3fb7801535fa01, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2100,8 +2103,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2118,7 +2121,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.7
+  m_fontSize: 34.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2157,7 +2160,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 9.893669, y: 3.1651173, z: 55.1439, w: 3.892109}
+  m_margin: {x: 9.440567, y: -1.186428, z: 54.34432, w: -1.0292187}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
