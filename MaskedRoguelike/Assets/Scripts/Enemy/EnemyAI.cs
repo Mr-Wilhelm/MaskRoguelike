@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Linq;
 using JetBrains.Annotations;
 using Unity.Mathematics;
 using Unity.VisualScripting;
@@ -97,6 +98,9 @@ public class EnemyAI : MonoBehaviour
         spriteRenderer.transform.eulerAngles = Vector3.zero;
         
         AnimatorClipInfo[ ] animationClip = animator.GetCurrentAnimatorClipInfo(0);
+
+        if(animationClip.Count() == 0) { return; }
+
         int currentFrame = (int) (animator.GetCurrentAnimatorStateInfo(0).normalizedTime * (animationClip [0].clip.length * animationClip[0].clip.frameRate));
         if (currentFrame%10 > 4)
         {
