@@ -542,79 +542,6 @@ MonoBehaviour:
   spawnPoints:
   - {fileID: 687858035}
   - {fileID: 346245957}
---- !u!1 &884703548 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3632567355477829867, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-  m_PrefabInstance: {fileID: 1524534792}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &884703554
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884703548}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.45, y: 2.25}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.14, y: 0.17}
-  m_EdgeRadius: 0
---- !u!95 &884703560
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 884703548}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c5559fe4be1f05d4e8d3bbe37a01eb96, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &953229214
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,18 +871,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1276266372961946436, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.45
       objectReference: {fileID: 0}
@@ -1003,60 +918,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1402679977}
-    - target: {fileID: 5686069067017616706, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6742349494478658339, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7996851433348715462, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 243446282360000019, guid: 56cbd790a6d58ed499dbf41df98f5136, type: 3}
-    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: burnDuration
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: frostDuration
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: damageUpgrades
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: frostSlowUpgrades
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: knockbackUpgrades
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: burnDamageUpgrades
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: burnDurationUpgrades
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8071534932383906030, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      propertyPath: frostDurationUpgrades
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3632567355477829867, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 884703554}
-    - targetCorrespondingSourceObject: {fileID: 3632567355477829867, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 884703560}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
 --- !u!1 &1618046185
 GameObject:

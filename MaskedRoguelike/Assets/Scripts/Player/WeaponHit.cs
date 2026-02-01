@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Unity.Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -32,10 +33,12 @@ public class WeaponHit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+                
         //triple nested if statements im so sorry
         if(collision.gameObject.tag == "Enemy")
         {
-            if(collision.TryGetComponent<EnemyAI>(out var enemy))
+            GameObject enemyGameObject = collision.GetComponentInParent<Transform>().parent.gameObject;
+            if(enemyGameObject.TryGetComponent<EnemyAI>(out var enemy))
             {
                 Debug.Log("Enemy Hit");
 
@@ -68,11 +71,11 @@ public class WeaponHit : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("Enemy tagged object mising EnemyAI component: " + collision.gameObject.name);
+                Debug.LogWarning("Enemy tagged object mising EnemyAI component: " + enemyGameObject.name);
             }
 
 
-            enemiesHit.Add(collision.gameObject.GetComponent<EnemyAI>());
+            enemiesHit.Add(enemyGameObject.GetComponent<EnemyAI>());
         }
     }
 
