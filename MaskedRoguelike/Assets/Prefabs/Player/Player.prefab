@@ -530,7 +530,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08357514d67c2064a97c96feb978f704, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMaskCount
-  maskCount: 20
+  maskCount: 0
 --- !u!114 &6774284592483732622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -678,7 +678,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7593773379589820746}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
