@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 07b4c108d3a0cd24b8caba3b6d1d0efb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3173094298876917158
+    second: animsheet_attack_ice_right_0
+  - first:
+      213: 3737278657830672351
+    second: animsheet_attack_ice_right_1
+  - first:
+      213: -2851636492269316919
+    second: animsheet_attack_ice_right_2
+  - first:
+      213: -3841312608898027544
+    second: animsheet_attack_ice_right_3
+  - first:
+      213: 3395270861846861030
+    second: animsheet_attack_ice_right_4
+  - first:
+      213: -6127611544342304589
+    second: animsheet_attack_ice_right_5
+  - first:
+      213: -2375818916985635510
+    second: animsheet_attack_ice_right_6
+  - first:
+      213: -1876018000062052129
+    second: animsheet_attack_ice_right_7
+  - first:
+      213: 4211731669043858241
+    second: animsheet_attack_ice_right_8
+  - first:
+      213: 7002474424243023040
+    second: animsheet_attack_ice_right_9
+  - first:
+      213: -9141551351251732523
+    second: animsheet_attack_ice_right_10
+  - first:
+      213: -2134797699475361090
+    second: animsheet_attack_ice_right_11
+  - first:
+      213: -1081474027490601759
+    second: animsheet_attack_ice_right_12
+  - first:
+      213: 2606105884467411524
+    second: animsheet_attack_ice_right_13
+  - first:
+      213: 1118396225957236709
+    second: animsheet_attack_ice_right_14
+  - first:
+      213: -9119768112472743599
+    second: animsheet_attack_ice_right_15
+  - first:
+      213: 5589716754084787827
+    second: animsheet_attack_ice_right_16
+  - first:
+      213: 6745091596913055367
+    second: animsheet_attack_ice_right_17
+  - first:
+      213: 6882549915349509626
+    second: animsheet_attack_ice_right_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_0
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 127
+        width: 82
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5acf940c87e6f3d0800000000000000
+      internalID: -3173094298876917158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_1
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 127
+        width: 98
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd755aa632b7dd330800000000000000
+      internalID: 3737278657830672351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_2
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 127
+        width: 130
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c41fb908b3fc68d0800000000000000
+      internalID: -2851636492269316919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_3
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 127
+        width: 162
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef676bc88ae0bac0800000000000000
+      internalID: -3841312608898027544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_4
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 127
+        width: 186
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4dd942cdc6e1f20800000000000000
+      internalID: 3395270861846861030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_5
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 127
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b8e4e114c956faa0800000000000000
+      internalID: -6127611544342304589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_6
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 127
+        width: 202
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4dfa6a5845670fd0800000000000000
+      internalID: -2375818916985635510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_7
+      rect:
+        serializedVersion: 2
+        x: 3295
+        y: 127
+        width: 202
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd8001a819b07f5e0800000000000000
+      internalID: -1876018000062052129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_8
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 127
+        width: 106
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14b4f9663a3137a30800000000000000
+      internalID: 4211731669043858241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_9
+      rect:
+        serializedVersion: 2
+        x: 3983
+        y: 207
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc63cd5369cd2160800000000000000
+      internalID: 7002474424243023040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_10
+      rect:
+        serializedVersion: 2
+        x: 4031
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d7f5a4ea7fa22180800000000000000
+      internalID: -9141551351251732523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_11
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2337f8dccaf52e0800000000000000
+      internalID: -2134797699475361090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_12
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 159
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e49c951a15ddf0f0800000000000000
+      internalID: -1081474027490601759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_13
+      rect:
+        serializedVersion: 2
+        x: 3991
+        y: 159
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a3cb28e7fba2420800000000000000
+      internalID: 2606105884467411524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_14
+      rect:
+        serializedVersion: 2
+        x: 4031
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef81562177558f00800000000000000
+      internalID: 1118396225957236709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_15
+      rect:
+        serializedVersion: 2
+        x: 4063
+        y: 159
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151a0266833107180800000000000000
+      internalID: -9119768112472743599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_16
+      rect:
+        serializedVersion: 2
+        x: 3975
+        y: 143
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376f542b5c9a29d40800000000000000
+      internalID: 5589716754084787827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_17
+      rect:
+        serializedVersion: 2
+        x: 4007
+        y: 143
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 786997302116b9d50800000000000000
+      internalID: 6745091596913055367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_ice_right_18
+      rect:
+        serializedVersion: 2
+        x: 3991
+        y: 127
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af56d45ceaab38f50800000000000000
+      internalID: 6882549915349509626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      animsheet_attack_ice_right_0: -3173094298876917158
+      animsheet_attack_ice_right_1: 3737278657830672351
+      animsheet_attack_ice_right_10: -9141551351251732523
+      animsheet_attack_ice_right_11: -2134797699475361090
+      animsheet_attack_ice_right_12: -1081474027490601759
+      animsheet_attack_ice_right_13: 2606105884467411524
+      animsheet_attack_ice_right_14: 1118396225957236709
+      animsheet_attack_ice_right_15: -9119768112472743599
+      animsheet_attack_ice_right_16: 5589716754084787827
+      animsheet_attack_ice_right_17: 6745091596913055367
+      animsheet_attack_ice_right_18: 6882549915349509626
+      animsheet_attack_ice_right_2: -2851636492269316919
+      animsheet_attack_ice_right_3: -3841312608898027544
+      animsheet_attack_ice_right_4: 3395270861846861030
+      animsheet_attack_ice_right_5: -6127611544342304589
+      animsheet_attack_ice_right_6: -2375818916985635510
+      animsheet_attack_ice_right_7: -1876018000062052129
+      animsheet_attack_ice_right_8: 4211731669043858241
+      animsheet_attack_ice_right_9: 7002474424243023040
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

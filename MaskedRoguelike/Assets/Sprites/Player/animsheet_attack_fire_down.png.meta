@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: e3246a2499d41684e9de2fad8b3a000a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5766109795212154523
+    second: animsheet_attack_fire_down_0
+  - first:
+      213: -7320261002392185140
+    second: animsheet_attack_fire_down_1
+  - first:
+      213: 1214769885366153718
+    second: animsheet_attack_fire_down_2
+  - first:
+      213: -8450337951623818217
+    second: animsheet_attack_fire_down_3
+  - first:
+      213: 2840608184800534240
+    second: animsheet_attack_fire_down_4
+  - first:
+      213: 2091439580218133504
+    second: animsheet_attack_fire_down_5
+  - first:
+      213: 945655594701829500
+    second: animsheet_attack_fire_down_6
+  - first:
+      213: -6004925103146371604
+    second: animsheet_attack_fire_down_7
+  - first:
+      213: -6099412492270634781
+    second: animsheet_attack_fire_down_8
+  - first:
+      213: -2566937090751112309
+    second: animsheet_attack_fire_down_9
+  - first:
+      213: 598905108659679433
+    second: animsheet_attack_fire_down_10
+  - first:
+      213: -2529468441061862015
+    second: animsheet_attack_fire_down_11
+  - first:
+      213: -7398708617872087865
+    second: animsheet_attack_fire_down_12
+  - first:
+      213: 5531592512251637979
+    second: animsheet_attack_fire_down_13
+  - first:
+      213: -8879056276912098887
+    second: animsheet_attack_fire_down_14
+  - first:
+      213: -4857476638004720515
+    second: animsheet_attack_fire_down_15
+  - first:
+      213: -933921328428246632
+    second: animsheet_attack_fire_down_16
+  - first:
+      213: -502532543725337339
+    second: animsheet_attack_fire_down_17
+  - first:
+      213: -5728624455800437010
+    second: animsheet_attack_fire_down_18
+  - first:
+      213: 6807084240888086719
+    second: animsheet_attack_fire_down_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_0
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 127
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 569aa7001b9aaffa0800000000000000
+      internalID: -5766109795212154523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_1
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 175
+        width: 42
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc6d4491765396a90800000000000000
+      internalID: -7320261002392185140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_2
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 127
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1771d46cabbd010800000000000000
+      internalID: 1214769885366153718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_3
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 175
+        width: 42
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 714d571a76e5aba80800000000000000
+      internalID: -8450337951623818217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_4
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 127
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee5a19081edb6720800000000000000
+      internalID: 2840608184800534240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_5
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 135
+        width: 58
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c0810a739460d10800000000000000
+      internalID: 2091439580218133504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_6
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 127
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75301ac0c4af1d00800000000000000
+      internalID: 945655594701829500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_7
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 95
+        width: 122
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce572242f683aaca0800000000000000
+      internalID: -6004925103146371604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_8
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 127
+        width: 98
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e8f0a387a88a5ba0800000000000000
+      internalID: -6099412492270634781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_9
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 0
+        width: 410
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b5101f058606cd0800000000000000
+      internalID: -2566937090751112309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_10
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 127
+        width: 210
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c0b3dfe50dbf4800800000000000000
+      internalID: 598905108659679433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_11
+      rect:
+        serializedVersion: 2
+        x: 3711
+        y: 183
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18552f3cad585ecd0800000000000000
+      internalID: -2529468441061862015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_12
+      rect:
+        serializedVersion: 2
+        x: 3767
+        y: 127
+        width: 122
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4ec1b46b1825990800000000000000
+      internalID: -7398708617872087865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_13
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 79
+        width: 178
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd038fe051a24cc40800000000000000
+      internalID: 5531592512251637979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_14
+      rect:
+        serializedVersion: 2
+        x: 3471
+        y: 143
+        width: 26
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1b3f10c5147c480800000000000000
+      internalID: -8879056276912098887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_15
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 71
+        width: 58
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c48f6dbb6c69cb0800000000000000
+      internalID: -4857476638004720515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_16
+      rect:
+        serializedVersion: 2
+        x: 3271
+        y: 39
+        width: 82
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8999fdaff7b0a03f0800000000000000
+      internalID: -933921328428246632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_17
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 55
+        width: 58
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5058d236055a609f0800000000000000
+      internalID: -502532543725337339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_18
+      rect:
+        serializedVersion: 2
+        x: 3751
+        y: 79
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee64664b866df70b0800000000000000
+      internalID: -5728624455800437010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animsheet_attack_fire_down_19
+      rect:
+        serializedVersion: 2
+        x: 3879
+        y: 55
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb04b463d0f977e50800000000000000
+      internalID: 6807084240888086719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      animsheet_attack_fire_down_0: -5766109795212154523
+      animsheet_attack_fire_down_1: -7320261002392185140
+      animsheet_attack_fire_down_10: 598905108659679433
+      animsheet_attack_fire_down_11: -2529468441061862015
+      animsheet_attack_fire_down_12: -7398708617872087865
+      animsheet_attack_fire_down_13: 5531592512251637979
+      animsheet_attack_fire_down_14: -8879056276912098887
+      animsheet_attack_fire_down_15: -4857476638004720515
+      animsheet_attack_fire_down_16: -933921328428246632
+      animsheet_attack_fire_down_17: -502532543725337339
+      animsheet_attack_fire_down_18: -5728624455800437010
+      animsheet_attack_fire_down_19: 6807084240888086719
+      animsheet_attack_fire_down_2: 1214769885366153718
+      animsheet_attack_fire_down_3: -8450337951623818217
+      animsheet_attack_fire_down_4: 2840608184800534240
+      animsheet_attack_fire_down_5: 2091439580218133504
+      animsheet_attack_fire_down_6: 945655594701829500
+      animsheet_attack_fire_down_7: -6004925103146371604
+      animsheet_attack_fire_down_8: -6099412492270634781
+      animsheet_attack_fire_down_9: -2566937090751112309
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
