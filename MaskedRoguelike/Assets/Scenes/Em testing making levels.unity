@@ -1451,6 +1451,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 1394118540}
+    - target: {fileID: 6718665682880839169, guid: b6b30c77b13073b4396fdd515e55e90f, type: 3}
+      propertyPath: maskCount
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
