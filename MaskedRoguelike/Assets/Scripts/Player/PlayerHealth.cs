@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
     {
         RecalculateMaxHealth();
         playerCurrentHealth = playerMaxHealth;
+        GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Healthbar>().SetHealth(playerCurrentHealth);
     }
 
     public void TakeDamage(float amount, Vector3 damageSourcePos, float knockbackModifier)
@@ -30,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
         if (playerCurrentHealth <= 0) { Die(); return; }
 
         playerCurrentHealth -= amount;
+        GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Healthbar>().SetHealth(playerCurrentHealth);
 
         Vector3 force = (transform.position - damageSourcePos).normalized * (knockbackModifier * 1000);
         GetComponent<Rigidbody2D>().AddForce(new Vector2(force.x, force.y));
@@ -39,6 +41,7 @@ public class PlayerHealth : MonoBehaviour
         playerCurrentHealth += amount;
 
         if (playerCurrentHealth > playerMaxHealth) { playerCurrentHealth = playerMaxHealth; }
+        GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Healthbar>().SetHealth(playerCurrentHealth);
     }
 
     private void Die()
@@ -59,6 +62,8 @@ public class PlayerHealth : MonoBehaviour
     {
         float bonusHealth = 5f * (1f - Mathf.Pow(healthUpgradeDecay, maxHealthUpgrades));
         playerMaxHealth = playerBaseMaxHealth + bonusHealth;
+
+        GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Healthbar>().SetMaxHealth(playerMaxHealth);
 
         playerCurrentHealth = Mathf.Min(playerCurrentHealth, playerMaxHealth);
     }

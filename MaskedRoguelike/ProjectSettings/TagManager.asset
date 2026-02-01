@@ -8,6 +8,7 @@ TagManager:
   - Merchant
   - RoomManager
   - Camera
+  - Healthbar
   layers:
   - Default
   - TransparentFX
