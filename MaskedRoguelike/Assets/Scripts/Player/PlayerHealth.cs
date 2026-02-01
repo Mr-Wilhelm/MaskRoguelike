@@ -46,8 +46,6 @@ public class PlayerHealth : MonoBehaviour
         Destroy(gameObject);
         Application.Quit();
         //some other logic for game over screen or restarting the game
-    
-    
     }
 
     public void AddMaxHealthUpgrade(int amount)
