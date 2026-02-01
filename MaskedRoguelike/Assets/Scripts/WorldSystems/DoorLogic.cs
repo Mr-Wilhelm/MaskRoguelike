@@ -1,23 +1,25 @@
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class DoorLogic : MonoBehaviour
 {
     public bool locked = true;
     public bool vendorDoor = false;
+    public Light2D exitLight;
 
     public void UnlockDoor()
     {
         if (locked)
         {
             locked = false;
-            // TURN THE LIGHT ON
+            exitLight.enabled = true;
         }
     }
 
     public void LockDoor()
     {
         locked = true;
-        // TURN THE LIGHT OFF
+        exitLight.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
