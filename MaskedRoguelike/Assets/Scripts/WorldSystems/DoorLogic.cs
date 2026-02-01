@@ -13,7 +13,13 @@ public class DoorLogic : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    public void LockDoor()
+    {
+        locked = true;
+        // TURN THE LIGHT OFF
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (!locked)
         {

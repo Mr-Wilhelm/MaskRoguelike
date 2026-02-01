@@ -9,6 +9,7 @@ public class RoomManagerScript : MonoBehaviour
     public GameObject [] roomEnemySpawnManagers;
     private GameObject player;
     private bool justLeftVendor = false;
+    private bool inVendorRoom = false;
     private int currentRoom = -1;
     private float roomsCleared = 0;
 
@@ -16,10 +17,19 @@ public class RoomManagerScript : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        NextRoom();
     }
 
     void Update()
     {
+        if (inVendorRoom)
+        {
+            exitDoors[0].GetComponent<DoorLogic>().LockDoor();
+            exitDoors[1].GetComponent<DoorLogic>().LockDoor();
+            exitDoors[2].GetComponent<DoorLogic>().LockDoor();
+            return;
+        }
+
         if (GameObject.FindGameObjectsWithTag("Enemy").Count() <= 0)
         {
             if (currentRoom == 1)
@@ -68,7 +78,7 @@ public class RoomManagerScript : MonoBehaviour
         else if (currentRoom == 3)
         {
             // Change magic number to be the same as the number of spawnpoints in the room
-            numberOfEnemies = 5 * (Mathf.FloorToInt(roomsCleared * 0.5f)+1);
+            numberOfEnemies = 7 * (Mathf.FloorToInt(roomsCleared * 0.3f)+1);
             roomEnemySpawnManagers[2].GetComponent<EnemySpawnManager>().spawnEnemyWave(numberOfEnemies);
         }
     }
