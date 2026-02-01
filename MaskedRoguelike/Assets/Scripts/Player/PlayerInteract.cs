@@ -19,6 +19,9 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField]
     private Image interactImage;
 
+    [SerializeField]
+    private ShopScript shopScript;
+
     private void OnEnable()
     {
         interactRef.action.Enable();
@@ -43,7 +46,7 @@ public class PlayerInteract : MonoBehaviour
     {
         if(!canVisitShop) { return; }
 
-        Debug.Log("Interact key Pressed");
+        shopScript.EnterShop();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -3,22 +3,19 @@ using UnityEngine.UI;
 
 public class ShopScript : MonoBehaviour
 {
-    [Header("ExternalScripts")]
-    [SerializeField]
-    private PlayerAttack playerAttackScript;
 
     [SerializeField]
-    private PlayerMaskCount playerMaskCount;
+    private CardUpgrade[] cardUpgrades;
 
-    [SerializeField]
-    private PlayerHealth playerHealth;
-
-    public void BuyIceStrengthUpgrade()
+    public void EnterShop()
     {
-        int upgradeCost = 10;
-        if (playerMaskCount.RemoveMasks(upgradeCost))
-            playerAttackScript.frostSlowUpgrades += 1;
-        else
-            return;
+        GetComponent<Canvas>().enabled = true;
+
+        foreach (CardUpgrade upgrade in cardUpgrades) { upgrade.RandomiseUpgrade(); }
+    }
+
+    public void LeaveShop()
+    {
+        GetComponent<Canvas>().enabled = false;
     }
 }
