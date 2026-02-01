@@ -9,6 +9,7 @@ TagManager:
   - RoomManager
   - Camera
   - Healthbar
+  - MaskCounter
   layers:
   - Default
   - TransparentFX
