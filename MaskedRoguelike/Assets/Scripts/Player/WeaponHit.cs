@@ -20,15 +20,21 @@ public class WeaponHit : MonoBehaviour
 
     private HashSet<EnemyAI> enemiesHit = new HashSet<EnemyAI>();
 
+    [SerializeField]
+    private Animator animator;
+
     private void Update()
     {
         Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
         Vector2 mouseWorldPos = cam.ScreenToWorldPoint(mouseScreenPos);
 
-        Vector2 mouseDir = mouseWorldPos - (Vector2)pivotPos.position;
+        Vector2 mouseDir = (mouseWorldPos - (Vector2)pivotPos.position);
         float mouseAngle = Mathf.Atan2(mouseDir.y, mouseDir.x) * Mathf.Rad2Deg - 90f;
 
         pivotPos.rotation = Quaternion.Euler(0f, 0f, mouseAngle);
+
+        animator.SetFloat("MouseX", (Mathf.Sign(mouseDir.normalized.x) / 10));
+        animator.SetFloat("MouseY", (Mathf.Sign(mouseDir.normalized.y) / 10));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -73,8 +79,6 @@ public class WeaponHit : MonoBehaviour
             {
                 Debug.LogWarning("Enemy tagged object mising EnemyAI component: " + enemyGameObject.name);
             }
-
-
             enemiesHit.Add(enemyGameObject.GetComponent<EnemyAI>());
         }
     }

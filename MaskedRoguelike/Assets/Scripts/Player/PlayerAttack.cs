@@ -73,6 +73,10 @@ public class PlayerAttack : MonoBehaviour
 
     public float weaponUpgradeDecay = 0.9f;
 
+    [Header("Animation")]
+    [SerializeField]
+    private Animator animator;
+
     void OnEnable()
     {
         //primary attack
@@ -122,13 +126,16 @@ public class PlayerAttack : MonoBehaviour
             case AttackType.primary:
                 isPrimaryAttacking = true;
                 isSecondaryAttacking = false;
+                animator.SetBool("isFireAttack", true);
+                animator.SetBool("isIceAttack", false);
                 break;
             case AttackType.secondary:
                 isPrimaryAttacking = false;
                 isSecondaryAttacking = true;
+                animator.SetBool("isFireAttack", false);
+                animator.SetBool("isIceAttack", true);
                 break;
         }
-
         StartCoroutine(AttackCooldown());
     }
 
@@ -139,6 +146,8 @@ public class PlayerAttack : MonoBehaviour
         weaponHitArea.GetComponent<PolygonCollider2D>().enabled = false;
         weapon.ResetHithash();  //reset the hash of enemies hit
         yield return new WaitForSeconds(weaponAttackCooldown);
+        animator.SetBool("isFireAttack", false);
+        animator.SetBool("isIceAttack", false);
         canAttack = true;
     }
 
