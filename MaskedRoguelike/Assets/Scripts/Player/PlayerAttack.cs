@@ -146,9 +146,9 @@ public class PlayerAttack : MonoBehaviour
         weaponHitArea.GetComponent<PolygonCollider2D>().enabled = false;
         weapon.ResetHithash();  //reset the hash of enemies hit
         yield return new WaitForSeconds(weaponAttackCooldown);
+        canAttack = true;
         animator.SetBool("isFireAttack", false);
         animator.SetBool("isIceAttack", false);
-        canAttack = true;
     }
 
     public float GetWeaponDamage()
