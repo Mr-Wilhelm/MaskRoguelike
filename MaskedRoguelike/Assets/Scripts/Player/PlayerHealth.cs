@@ -1,3 +1,4 @@
+using UnityEditor.Callbacks;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -19,10 +20,13 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField]
     public int maxHealthUpgrades = 1;
 
+    private Rigidbody2D rb;
+
     private void Start()
     {
         RecalculateMaxHealth();
         playerCurrentHealth = playerMaxHealth;
+        rb = GetComponent<Rigidbody2D>();
         GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Healthbar>().SetHealth(playerCurrentHealth);
     }
 
@@ -33,12 +37,14 @@ public class PlayerHealth : MonoBehaviour
         playerCurrentHealth -= amount;
         GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Healthbar>().SetHealth(playerCurrentHealth);
 
-        Vector3 force = (transform.position - damageSourcePos).normalized * (knockbackModifier * 1000);
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(force.x, force.y));
+        Vector3 force = (transform.position - damageSourcePos).normalized * (knockbackModifier * 10000);
+        rb.linearVelocity = Vector2.zero;
+        rb.AddForce(new Vector2(force.x, force.y), ForceMode2D.Impulse);
     }
     public void Heal(float amount)
     {
-        playerCurrentHealth += amount;
+        //playerCurrentHealth += amount; QUICK FIX TO MAKE THE HEAL UPGRADE TAKE YOU TO FULL HEALTH
+        playerCurrentHealth = playerMaxHealth;
 
         if (playerCurrentHealth > playerMaxHealth) { playerCurrentHealth = playerMaxHealth; }
         GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Healthbar>().SetHealth(playerCurrentHealth);

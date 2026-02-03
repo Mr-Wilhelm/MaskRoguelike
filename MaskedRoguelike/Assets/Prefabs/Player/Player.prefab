@@ -351,7 +351,7 @@ MonoBehaviour:
   weapon: {fileID: 4625899067503880572}
   canAttack: 1
   weaponAttackDuration: 0.25
-  weaponAttackCooldown: 0.25
+  weaponAttackCooldown: 0.1
   weaponDamage: 10
   weaponKnockbackStrength: 1
   isPrimaryAttacking: 0
@@ -412,8 +412,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.0047855, y: 1.2418869}
-  m_EdgeRadius: 0
+  m_Size: {x: 0.7, y: 0.94}
+  m_EdgeRadius: 0.06
 --- !u!114 &3323472721785442279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,6 +529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMaskCount
   maskCount: 0
+  counterText: {fileID: 0}
 --- !u!1 &5194033795664441593
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,18 +686,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.019941812, y: 0.33574265}
-      - {x: -0.042047087, y: 0.3285639}
-      - {x: -0.1273492, y: 0.31115314}
-      - {x: -0.17669687, y: 0.29540148}
-      - {x: -0.22856157, y: 0.2678249}
-      - {x: -0.31206554, y: 0.22417898}
-      - {x: -0.30858088, y: 0.09911913}
-      - {x: -0.0000548698, y: -0.16956969}
-      - {x: 0.29220378, y: 0.12011762}
-      - {x: 0.2941672, y: 0.23638366}
-      - {x: 0.24424438, y: 0.26042497}
-      - {x: 0.17551465, y: 0.28804538}
-      - {x: 0.13410144, y: 0.3015849}
-      - {x: 0.08307459, y: 0.3201913}
+    - - {x: 0.14806294, y: 0.015393604}
+      - {x: 0.15923367, y: 0.026741203}
+      - {x: 0.12217756, y: 0.053234525}
+      - {x: 0.070015386, y: 0.086841576}
+      - {x: -0.0017746328, y: 0.089302465}
+      - {x: -0.0748059, y: 0.08453484}
+      - {x: -0.13120562, y: 0.06286709}
+      - {x: -0.17745665, y: 0.028661825}
+      - {x: -0.0002752673, y: -0.15295523}
   m_UseDelaunayMesh: 1
