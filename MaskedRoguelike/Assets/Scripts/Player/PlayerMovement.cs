@@ -85,6 +85,12 @@ public class PlayerMovement : MonoBehaviour
 
         totalMoveSpeed = moveSpeed * moveSpeedBonus;
         rb.MovePosition(rb.position + moveInput.normalized * totalMoveSpeed * Time.fixedDeltaTime);
+
+        if (moveInput.sqrMagnitude <= 0.01f)
+        {
+            EnableDodge();
+        }
+
     }
 
     void OnEnable()
@@ -130,23 +136,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDodge(InputAction.CallbackContext context)
     {
-        if(canDodge) { StartCoroutine(Dodge()); }
+        if(canDodge)
+            animator.SetBool("isDodging", true);
     }
 
-    private IEnumerator Dodge()
+    public void EnableDodge()
+    {
+        moveSpeed = baseMoveSpeed;
+        isInvulnerable = false;
+
+        canDodge = true;
+        animator.SetBool("isDodging", false);
+    }
+
+    public void DisableDodge()
     {
         canDodge = false;
-        animator.SetBool("isDodging", true);
-        float priorDodgeSpeed = moveSpeed;
-        moveSpeed = (baseMoveSpeed * dodgeSpeedModifier);
+
+        moveSpeed = baseMoveSpeed * dodgeSpeedModifier;
         isInvulnerable = true;
-        yield return new WaitForSeconds(dodgeDuration);
-
-        moveSpeed = priorDodgeSpeed;
-        isInvulnerable = false;
-        yield return new WaitForSeconds(dodgeCooldown);
-
-        animator.SetBool("isDodging", false);
-        canDodge = true;
+        
     }
 }

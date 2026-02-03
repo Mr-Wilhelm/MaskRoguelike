@@ -118,6 +118,7 @@ public class PlayerAttack : MonoBehaviour
         }
 
         if (!canAttack) { return; }
+        //if(isPrimaryAttacking || isSecondaryAttacking) { return; }
 
         weaponHitArea.GetComponent<PolygonCollider2D>().enabled = true;
 
@@ -136,19 +137,7 @@ public class PlayerAttack : MonoBehaviour
                 animator.SetBool("isIceAttack", true);
                 break;
         }
-        StartCoroutine(AttackCooldown());
-    }
-
-    private IEnumerator AttackCooldown()
-    {
-        canAttack = false;
-        yield return new WaitForSeconds(weaponAttackDuration);
-        weaponHitArea.GetComponent<PolygonCollider2D>().enabled = false;
-        weapon.ResetHithash();  //reset the hash of enemies hit
-        yield return new WaitForSeconds(weaponAttackCooldown);
-        canAttack = true;
-        animator.SetBool("isFireAttack", false);
-        animator.SetBool("isIceAttack", false);
+        //StartCoroutine(AttackCooldown()); this is now called as an animation event
     }
 
     public float GetWeaponDamage()
@@ -178,6 +167,24 @@ public class PlayerAttack : MonoBehaviour
     public float GetFrostSlowDuration()
     {
         return frostDuration * 1.0f + (1.0f - Mathf.Pow(weaponUpgradeDecay, frostDurationUpgrades));
+    }
+
+    public void PreventAttack()
+    {
+        canAttack = false;
+    }
+
+    public void EnableAttack()
+    {
+        weaponHitArea.GetComponent<PolygonCollider2D>().enabled = false;
+
+        animator.SetBool("isFireAttack", false);
+        animator.SetBool("isIceAttack", false);
+
+        isPrimaryAttacking = false;
+        isSecondaryAttacking = false;
+
+        canAttack = true;
     }
 
 }
