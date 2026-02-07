@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float totalMoveSpeed;
 
+    public bool lockedMovement = false;
+
     [SerializeField]
     [Tooltip("The rate at which movement speed is increased." +
         "Higher Value = Slower Rate of Increase")]
@@ -65,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     public int moveUpgrades = 1;
 
+    
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
@@ -84,7 +87,10 @@ public class PlayerMovement : MonoBehaviour
         moveSpeedBonus = moveSpeedMultiplier;    //diminishing returns maths.
 
         totalMoveSpeed = moveSpeed * moveSpeedBonus;
-        rb.MovePosition(rb.position + moveInput.normalized * totalMoveSpeed * Time.fixedDeltaTime);
+
+        if (!lockedMovement){rb.MovePosition(rb.position + moveInput.normalized * totalMoveSpeed * Time.fixedDeltaTime);}
+        else{rb.linearVelocity = Vector2.zero;}
+        
 
         if (moveInput.sqrMagnitude <= 0.01f)
         {

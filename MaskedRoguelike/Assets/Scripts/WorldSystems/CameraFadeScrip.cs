@@ -18,10 +18,13 @@ public class CameraFadeScrip : MonoBehaviour
 
     public IEnumerator FadeOutIn()
     {
+        
+        player.GetComponent<PlayerMovement>().lockedMovement = true;
         yield return Fade(0f, 1f);
         player.transform.position = teleportPos;
         yield return new WaitForSeconds(1f);
         yield return Fade(1f, 0f);
+        player.GetComponent<PlayerMovement>().lockedMovement = false;
     }
     public IEnumerator StartGameFade()
     {
