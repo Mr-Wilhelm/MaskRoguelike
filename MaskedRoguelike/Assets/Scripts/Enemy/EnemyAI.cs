@@ -206,7 +206,7 @@ public class EnemyAI : MonoBehaviour
     // Example Usage: TakeDamage(1, player.transform.position);
     public void TakeDamage(float amount, Vector3 knockbackSource, DamageType damageType, float knockbackModifier = 1f)
     {
-
+        if (dead){return;}
 
         // Turning off the NavMeshAgent so that it doesnt overwrite the position or teleport the enemy immediately back to the player when the stun is over
         agent.isStopped = true;
@@ -221,14 +221,16 @@ public class EnemyAI : MonoBehaviour
         if (damageType == DamageType.Fire)
         {
             isBurning = true; 
-
+            animator.SetBool("isBurning", true);
+            animator.Play("SlimeBurn", 0, 0f);
         }
 
          
         else if (damageType == DamageType.Ice)
         {
             isFrosty = true; 
-
+            animator.SetBool("isFrozen", true);
+            animator.Play("SlimeFreeze", 0, 0f);
         }
 
 
@@ -257,7 +259,7 @@ public class EnemyAI : MonoBehaviour
 
     public void AttackPlayer(GameObject player)
     {  
-        if (canAttack)
+        if (canAttack && !stunned && health > 0)
         {
             
             // REPLACE WITH SOME FUNCTION CALL TO THE PLAYER THAT HANDLES DAMAGE, SHOULD INCLUDE DAMAGE AMOUNT AND POSITION OF DAMAGE SOURCE FOR KNOCKBACK CALCULATIONS

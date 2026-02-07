@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -21,6 +22,8 @@ public class PlayerHealth : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private float timeStamp;
+
     private void Start()
     {
         RecalculateMaxHealth();
@@ -29,14 +32,30 @@ public class PlayerHealth : MonoBehaviour
         GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Healthbar>().SetHealth(playerCurrentHealth);
     }
 
+    IEnumerator KnockbackCooldown()
+    {
+        yield return new WaitForSeconds(0.5f);
+        GetComponent<PlayerMovement>().stunned = false;
+        GetComponent<PlayerMovement>().lockedMovement = false;
+    }
+
     public void TakeDamage(float amount, Vector3 damageSourcePos, float knockbackModifier)
     {
+        if (timeStamp >= Time.time)
+        {
+            return;
+        }
+        timeStamp = Time.time + 0.7f;
+
         if (playerCurrentHealth <= 0) { Die(); return; }
 
         playerCurrentHealth -= amount;
         GameObject.FindGameObjectWithTag("Healthbar").GetComponent<Healthbar>().SetHealth(playerCurrentHealth);
-
-        Vector3 force = (transform.position - damageSourcePos).normalized * (knockbackModifier * 10000);
+        GetComponent<PlayerMovement>().stunned = true;
+        GetComponent<PlayerMovement>().lockedMovement = true;
+        StopCoroutine(KnockbackCooldown());
+        StartCoroutine(KnockbackCooldown());
+        Vector3 force = (transform.position - damageSourcePos).normalized * (knockbackModifier * 25);
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(new Vector2(force.x, force.y), ForceMode2D.Impulse);
     }

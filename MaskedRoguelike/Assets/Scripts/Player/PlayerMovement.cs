@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
     private float totalMoveSpeed;
 
     public bool lockedMovement = false;
+    public bool stunned = false;
 
     [SerializeField]
     [Tooltip("The rate at which movement speed is increased." +
@@ -89,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
         totalMoveSpeed = moveSpeed * moveSpeedBonus;
 
         if (!lockedMovement){rb.MovePosition(rb.position + moveInput.normalized * totalMoveSpeed * Time.fixedDeltaTime);}
-        else{rb.linearVelocity = Vector2.zero;}
+        else{ if (!stunned){rb.linearVelocity = Vector2.zero;}}
         
 
         if (moveInput.sqrMagnitude <= 0.01f)
